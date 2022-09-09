@@ -1,3 +1,5 @@
 # Aerosol Icon Pack
  
-A public icon pack for a range of common aerosol-related devices. 
+A public icon pack for a range of common aerosol-related devices. Sample icons are shown below.
+
+<img src="docs/grid.png" style="width:95%;">
