@@ -1,4 +1,4 @@
-# Aerosol Icon Pack
+# Aerosol Icon Project
  
 A public icon pack for a range of common aerosol-related devices. Sample icons are shown below.
 
