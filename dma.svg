@@ -1,0 +1,44 @@
+<svg width="98" height="102" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    overflow="hidden">
+    <defs>
+        <clipPath id="clip0">
+            <rect x="1289" y="575" width="98" height="102" />
+        </clipPath>
+    </defs>
+    <g clip-path="url(#clip0)" transform="translate(-1289 -575)">
+        <path
+            d="M1351.09 661C1347.33 653.023 1343.87 643.567 1347.61 635.744 1351.36 627.921 1369.61 621.412 1373.57 614.061 1377.52 606.71 1372.12 595.17 1371.36 591.638 1370.61 588.107 1370.7 586.053 1370.78 584"
+            stroke="#000000" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" />
+        <path
+            d="M0 2.6667C-6.44524e-16 1.19392 1.19392 -6.44525e-16 2.66669 -6.44525e-16L78.3333 0C79.8061 -6.44525e-16 81 1.19392 81 2.6667L81 13.3333C81 14.8061 79.8061 16 78.3333 16L2.66669 16C1.19392 16 -3.22262e-16 14.8061 -3.22262e-16 13.3333Z"
+            stroke="#000000" stroke-width="2" stroke-miterlimit="8" fill="#D9D9D9" fill-rule="evenodd"
+            transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 1368 663)" />
+        <path
+            d="M0 1.66671C-2.06884e-16 0.746213 0.746213 -6.20653e-16 1.66671 -8.27537e-16L8.33329 0C9.25379 -2.06884e-16 10 0.746213 10 1.66671L10 24.3333C10 25.2538 9.25379 26 8.33329 26L1.66671 26C0.746213 26 -2.06884e-16 25.2538 0 24.3333Z"
+            stroke="#000000" stroke-width="2" stroke-miterlimit="8" fill="#D9D9D9" fill-rule="evenodd"
+            transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 1374 586)" />
+        <path
+            d="M46.7992 86 3.78673 86C1.69531 86 0 84.3349 0 82.2808L0 14.2845 0 9.05829 0 4.37043 0 2.33288 0 1.53009C0 0.685032 0.697488 0 1.55781 0L92.4421 0C93.3025 0 94 0.685032 94 1.53009L94 2.33288 94 9.05829 94 14.2845C94 15.1296 93.3025 15.8146 92.4421 15.8146L50.586 15.8146 50.586 82.2808C50.586 84.3349 48.8907 86 46.7992 86Z"
+            stroke="#000000" stroke-width="2" stroke-miterlimit="8" fill="#D9D9D9" fill-rule="evenodd"
+            transform="matrix(1 -1.22465e-16 -1.22465e-16 -1 1291 675)" />
+        <path
+            d="M30.2546 0 4.74538 0C2.12457 0 0 2.09934 0 4.68902L0 26.4237C0 29.0134 2.12457 31.1127 4.74538 31.1127L8.00467 31.1127 8.00467 34.9857C8.00467 36.0981 8.91737 37 10.0432 37L24.9568 37C26.0826 37 26.9953 36.0981 26.9953 34.9857L26.9953 31.1127 30.2546 31.1127C32.8754 31.1127 35 29.0134 35 26.4237L35 4.68902C35 2.09934 32.8754 0 30.2546 0Z"
+            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+            fill="#BFBFBF" fill-rule="evenodd" transform="matrix(-1 0 0 1 1334 599)" />
+        <path
+            d="M0 2.12061C0 0.94943 0.94943 -4.29683e-16 2.12061 -8.59365e-16L24.8794 0C26.0506 -4.29683e-16 27 0.94943 27 2.12061L27 20.8794C27 22.0506 26.0506 23 24.8794 23L2.12061 23C0.94943 23 0 22.0506 0 20.8794Z"
+            stroke="#000000" stroke-width="2" stroke-miterlimit="8" fill="#FFFFFF" fill-rule="evenodd"
+            transform="matrix(-1 0 0 1 1330 603)" />
+        <path
+            d="M1314 631C1314 629.895 1315.12 629 1316.5 629 1317.88 629 1319 629.895 1319 631 1319 632.105 1317.88 633 1316.5 633 1315.12 633 1314 632.105 1314 631Z"
+            stroke="#000000" stroke-width="2" stroke-miterlimit="8" fill="#F2F2F2" fill-rule="evenodd" />
+        <path d="M1309 610 1324.51 610" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="8"
+            fill="none" fill-rule="evenodd" />
+        <path d="M1309 616 1319.66 616" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="8"
+            fill="none" fill-rule="evenodd" />
+        <path d="M1299 659 1321.14 659" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="8"
+            fill="none" fill-rule="evenodd" />
+        <path d="M1328 659 1331.5 659" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="8"
+            fill="none" fill-rule="evenodd" />
+    </g>
+</svg>
