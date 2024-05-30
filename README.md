@@ -6,7 +6,7 @@ A public icon pack for a range of common aerosol-related devices, provided as SV
 <img src="svg/dma.svg" style="padding-right:50px;"> <img src="svg/cpc.svg" style="padding-right:50px;">
 <img src="svg/cpma.svg" style="padding-right:50px;"> <img src="svg/aac.svg" style="padding-right:50px;">
 <img src="svg/sp2xr.svg" style="padding-right:50px;">
-<img src="svg/caps.svg" style="padding-right:50px;">
+<img src="svg/misg.svg" style="padding-right:50px;">
 
 ## Rules
 
