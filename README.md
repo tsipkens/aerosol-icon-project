@@ -15,6 +15,6 @@ Contributions should attempt to adhere to the following principles:
 
 2. Icons have a somewhat standardized size and line width. More details on these specifications are to come. 
 
-3. A somewhat limited color palette on a per instrument basis. If colors are close, one use a single color. 
+3. A somewhat limited color palette on a per instrument basis. 
 
 4. Moderate amounts of detail. Enough to make the icon unique and recognizable, without adding too much visual clutter. 
