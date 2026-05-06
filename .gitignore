@@ -3,3 +3,8 @@ raw/*
 ~$icons.pptx
 archive/*
 code/gen_grid.py
+output_svgs/*
+output_emfs/*
+*.html
+icons-2.pptx
+code/pptx2svg.py
