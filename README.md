@@ -1,5 +1,9 @@
-# Aerosol Icon Project
+# Aerosol icon project
  
+### An open source set of icons for aerosol instrumentation
+
+[![DOI](https://zenodo.org/badge/534490878.svg)](https://zenodo.org/badge/latestdoi/534490878)
+
 A public icon pack for a range of common aerosol-related devices, provided as SVGs (a subset) or in PPTX (full icon set). Sample icons are shown below.
 
 <img src="docs\grid.png">
