@@ -2,7 +2,7 @@
  
 ### An open source set of icons for aerosol instrumentation
 
-[![DOI](https://zenodo.org/badge/534490878.svg)](https://zenodo.org/badge/latestdoi/534490878)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22691988.svg)](https://doi.org/10.5281/zenodo.22691988)
 
 A public icon pack for a range of common aerosol-related devices, provided as SVGs (a subset) or in PPTX (full icon set). Sample icons are shown below.
 
