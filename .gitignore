@@ -8,3 +8,4 @@ output_emfs/*
 *.html
 icons-2.pptx
 code/pptx2svg.py
+.vscode/
