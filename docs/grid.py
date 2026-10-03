@@ -2,9 +2,11 @@
 """
 Generates a GitHub-compatible HTML grid of SVGs using native <table> elements
 and injects it directly into README.md between marker comments.
+Calculates width based on aspect ratios so all SVGs scale uniformly without stretching.
 """
 
 from pathlib import Path
+import xml.etree.ElementTree as ET
 import re
 import sys
 
@@ -18,7 +20,38 @@ END_MARKER = "<!-- SVG_GRID_END -->"
 
 # Grid formatting configuration
 COLUMNS_PER_ROW = 5  # Number of columns in the HTML table
-ICON_SIZE = 48       # Width and height in px for uniform sizing
+TARGET_HEIGHT = 48   # Target visual height (in px) for all icons
+MAX_CELL_WIDTH = 90  # Maximum bounding width (in px) to fit inside table cells
+
+
+def get_svg_aspect_ratio(filepath: Path) -> float:
+    """
+    Extracts (width / height) aspect ratio from an SVG's viewBox or dimensions.
+    Defaults to 1.0 (square) if unparseable.
+    """
+    try:
+        tree = ET.parse(filepath)
+        root = tree.getroot()
+
+        # Parse viewBox if available ("min-x min-y width height")
+        viewbox = root.attrib.get("viewBox") or root.attrib.get("viewbox")
+        if viewbox:
+            parts = [float(p) for p in re.split(r"[\s,]+", viewbox.strip()) if p]
+            if len(parts) == 4 and parts[2] > 0 and parts[3] > 0:
+                return parts[2] / parts[3]
+
+        # Fallback to width/height attributes
+        w_attr = root.attrib.get("width", "")
+        h_attr = root.attrib.get("height", "")
+        w_val = "".join(c for c in w_attr if c.isdigit() or c == ".")
+        h_val = "".join(c for c in h_attr if c.isdigit() or c == ".")
+
+        if w_val and h_val and float(h_val) > 0:
+            return float(w_val) / float(h_val)
+    except Exception:
+        pass
+
+    return 1.0
 
 
 def build_svg_grid(svg_directory: Path) -> str:
@@ -38,12 +71,15 @@ def build_svg_grid(svg_directory: Path) -> str:
         except ValueError:
             rel_path = filepath.as_posix()
 
-        # Cell HTML containing only the centered icon
+        # Calculate width based on aspect ratio targeting ~48px height
+        aspect_ratio = get_svg_aspect_ratio(filepath)
+        display_w = round(min(TARGET_HEIGHT * aspect_ratio, MAX_CELL_WIDTH))
+
+        # Specifying ONLY width allows the browser engine to automatically compute 
+        # height based on the SVG's viewBox, preventing stretching/distortion entirely.
         cell_html = (
-            f'<td align="center" width="120" valign="middle">\n'
-            f'  <br/>\n'
-            f'  <img src="{rel_path}" width="{ICON_SIZE}" height="{ICON_SIZE}" alt="{filepath.stem}" />\n'
-            f'  <br/><br/>\n'
+            f'<td align="center" width="120" height="80" valign="middle">\n'
+            f'  <img src="{rel_path}" width="{display_w}" alt="{filepath.stem}" />\n'
             f'</td>'
         )
         current_row.append(cell_html)
@@ -52,7 +88,7 @@ def build_svg_grid(svg_directory: Path) -> str:
             rows.append("  <tr>\n" + "\n".join(current_row) + "\n  </tr>")
             current_row = []
 
-    # Fill remaining cells in the last row to maintain grid alignment
+    # Fill remaining cells in incomplete final row
     if current_row:
         while len(current_row) < COLUMNS_PER_ROW:
             current_row.append('<td align="center" width="120"></td>')
@@ -84,7 +120,7 @@ def update_readme(grid_html: str):
     updated_content = pattern.sub(replacement, readme_content)
 
     README_FILE.write_text(updated_content, encoding="utf-8")
-    print(f"Successfully updated {README_FILE} with the icon grid.")
+    print(f"Successfully updated {README_FILE} with non-distorted SVG grid.")
 
 
 def main():

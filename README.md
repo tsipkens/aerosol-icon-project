@@ -30,226 +30,144 @@ Contributions should attempt to adhere to the following principles:
 <!-- SVG_GRID_START -->
 <table>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/aac.svg" width="48" height="48" alt="aac" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/aac.svg" width="57" alt="aac" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/aerosol-generator.svg" width="48" height="48" alt="aerosol-generator" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/aerosol-generator.svg" width="75" alt="aerosol-generator" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/aeth.svg" width="48" height="48" alt="aeth" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/aeth.svg" width="72" alt="aeth" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/caps.svg" width="48" height="48" alt="caps" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/caps.svg" width="88" alt="caps" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/cpc.svg" width="48" height="48" alt="cpc" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/cpc.svg" width="36" alt="cpc" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/cpma.svg" width="48" height="48" alt="cpma" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/cpma.svg" width="49" alt="cpma" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/dryer.svg" width="48" height="48" alt="dryer" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/dryer.svg" width="90" alt="dryer" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/electrospray.svg" width="48" height="48" alt="electrospray" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/electrospray.svg" width="75" alt="electrospray" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/electrostatic-sampler.svg" width="48" height="48" alt="electrostatic-sampler" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/electrostatic-sampler.svg" width="22" alt="electrostatic-sampler" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/elpi.svg" width="48" height="48" alt="elpi" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/elpi.svg" width="43" alt="elpi" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/esp-nano.svg" width="48" height="48" alt="esp-nano" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/esp-nano.svg" width="24" alt="esp-nano" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/fcae.svg" width="48" height="48" alt="fcae" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/fcae.svg" width="60" alt="fcae" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/filter-holder.svg" width="48" height="48" alt="filter-holder" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/filter-holder.svg" width="55" alt="filter-holder" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/gas-red.svg" width="48" height="48" alt="gas-red" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/gas-red.svg" width="21" alt="gas-red" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/lii.svg" width="48" height="48" alt="lii" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/lii.svg" width="90" alt="lii" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/magic-cpc.svg" width="48" height="48" alt="magic-cpc" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/magic-cpc.svg" width="37" alt="magic-cpc" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/mfc.svg" width="48" height="48" alt="mfc" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/mfc.svg" width="51" alt="mfc" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/micro-aeth.svg" width="48" height="48" alt="micro-aeth" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/micro-aeth.svg" width="63" alt="micro-aeth" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/minicast.svg" width="48" height="48" alt="minicast" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/minicast.svg" width="60" alt="minicast" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/misg.svg" width="48" height="48" alt="misg" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/misg.svg" width="68" alt="misg" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/mss.svg" width="48" height="48" alt="mss" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/mss.svg" width="78" alt="mss" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/nanodma.svg" width="48" height="48" alt="nanodma" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/nanodma.svg" width="40" alt="nanodma" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/nebulizer.svg" width="48" height="48" alt="nebulizer" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/nebulizer.svg" width="18" alt="nebulizer" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/nebulizer2.svg" width="48" height="48" alt="nebulizer2" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/nebulizer2.svg" width="71" alt="nebulizer2" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/neutralizer.svg" width="48" height="48" alt="neutralizer" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/neutralizer.svg" width="90" alt="neutralizer" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/oflow.svg" width="48" height="48" alt="oflow" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/oflow.svg" width="80" alt="oflow" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/opacimeter.svg" width="48" height="48" alt="opacimeter" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/opacimeter.svg" width="72" alt="opacimeter" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/ops.svg" width="48" height="48" alt="ops" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/ops.svg" width="71" alt="ops" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/paas.svg" width="48" height="48" alt="paas" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/paas.svg" width="78" alt="paas" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/pax.svg" width="48" height="48" alt="pax" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/pax.svg" width="82" alt="pax" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/pine.svg" width="48" height="48" alt="pine" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/pine.svg" width="35" alt="pine" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/ptaam.svg" width="48" height="48" alt="ptaam" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/ptaam.svg" width="90" alt="ptaam" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/rotating-disk-diluter.svg" width="48" height="48" alt="rotating-disk-diluter" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/rotating-disk-diluter.svg" width="90" alt="rotating-disk-diluter" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/smps.svg" width="48" height="48" alt="smps" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/smps.svg" width="58" alt="smps" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/sp2.svg" width="48" height="48" alt="sp2" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/sp2.svg" width="82" alt="sp2" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/sp2xr.svg" width="48" height="48" alt="sp2xr" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/sp2xr.svg" width="46" alt="sp2xr" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/spg.svg" width="48" height="48" alt="spg" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/spg.svg" width="65" alt="spg" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/stripper.svg" width="48" height="48" alt="stripper" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/stripper.svg" width="90" alt="stripper" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/syringe-pump.svg" width="48" height="48" alt="syringe-pump" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/syringe-pump.svg" width="62" alt="syringe-pump" />
 </td>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/teom.svg" width="48" height="48" alt="teom" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/teom.svg" width="37" alt="teom" />
 </td>
   </tr>
   <tr>
-<td align="center" width="120" valign="middle">
-  <br/>
-  <img src="svg/udac.svg" width="48" height="48" alt="udac" />
-  <br/><br/>
+<td align="center" width="120" height="80" valign="middle">
+  <img src="svg/udac.svg" width="39" alt="udac" />
 </td>
 <td align="center" width="120"></td>
 <td align="center" width="120"></td>
