@@ -77,8 +77,8 @@ def update_readme_with_svg_table(
 
 if __name__ == "__main__":
     update_readme_with_svg_table(
-        svg_folder="./svg",  # Path to your SVG folder
-        readme_path="README.md",  # Path to your README file
+        svg_folder="../svg",  # Path to your SVG folder
+        readme_path="../README.md",  # Path to your README file
         columns=4,  # Number of table columns
         icon_size=96,  # Preview size in pixels
     )
