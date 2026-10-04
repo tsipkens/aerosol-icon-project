@@ -30,149 +30,234 @@ Contributions should attempt to adhere to the following principles:
 <!-- SVG_GRID_START -->
 <table>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/aac.svg" width="57" alt="aac" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/aerosol-generator.svg" width="75" alt="aerosol-generator" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/aeth.svg" width="72" alt="aeth" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/caps.svg" width="88" alt="caps" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/cpc.svg" width="36" alt="cpc" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/aac.svg">
+        <img src="svg/aac.svg" width="96" height="96" alt="Aac" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/aerosol-generator.svg">
+        <img src="svg/aerosol-generator.svg" width="96" height="96" alt="Aerosol Generator" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/aeth.svg">
+        <img src="svg/aeth.svg" width="96" height="96" alt="Aeth" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/caps.svg">
+        <img src="svg/caps.svg" width="96" height="96" alt="Caps" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/cpma.svg" width="49" alt="cpma" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/dryer.svg" width="90" alt="dryer" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/electrospray.svg" width="75" alt="electrospray" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/electrostatic-sampler.svg" width="22" alt="electrostatic-sampler" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/elpi.svg" width="43" alt="elpi" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/cpc.svg">
+        <img src="svg/cpc.svg" width="96" height="96" alt="Cpc" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/cpma.svg">
+        <img src="svg/cpma.svg" width="96" height="96" alt="Cpma" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/dryer.svg">
+        <img src="svg/dryer.svg" width="96" height="96" alt="Dryer" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/electrospray.svg">
+        <img src="svg/electrospray.svg" width="96" height="96" alt="Electrospray" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/esp-nano.svg" width="24" alt="esp-nano" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/fcae.svg" width="60" alt="fcae" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/filter-holder.svg" width="55" alt="filter-holder" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/gas-red.svg" width="21" alt="gas-red" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/lii.svg" width="90" alt="lii" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/electrostatic-sampler.svg">
+        <img src="svg/electrostatic-sampler.svg" width="96" height="96" alt="Electrostatic Sampler" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/elpi.svg">
+        <img src="svg/elpi.svg" width="96" height="96" alt="Elpi" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/esp-nano.svg">
+        <img src="svg/esp-nano.svg" width="96" height="96" alt="Esp Nano" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/fcae.svg">
+        <img src="svg/fcae.svg" width="96" height="96" alt="Fcae" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/magic-cpc.svg" width="37" alt="magic-cpc" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/mfc.svg" width="51" alt="mfc" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/micro-aeth.svg" width="63" alt="micro-aeth" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/minicast.svg" width="60" alt="minicast" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/misg.svg" width="68" alt="misg" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/filter-holder.svg">
+        <img src="svg/filter-holder.svg" width="96" height="96" alt="Filter Holder" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/gas-red.svg">
+        <img src="svg/gas-red.svg" width="96" height="96" alt="Gas Red" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/lii.svg">
+        <img src="svg/lii.svg" width="96" height="96" alt="Lii" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/magic-cpc.svg">
+        <img src="svg/magic-cpc.svg" width="96" height="96" alt="Magic Cpc" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/mss.svg" width="78" alt="mss" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/nanodma.svg" width="40" alt="nanodma" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/nebulizer.svg" width="18" alt="nebulizer" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/nebulizer2.svg" width="71" alt="nebulizer2" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/neutralizer.svg" width="90" alt="neutralizer" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/mfc.svg">
+        <img src="svg/mfc.svg" width="96" height="96" alt="Mfc" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/micro-aeth.svg">
+        <img src="svg/micro-aeth.svg" width="96" height="96" alt="Micro Aeth" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/minicast.svg">
+        <img src="svg/minicast.svg" width="96" height="96" alt="Minicast" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/misg.svg">
+        <img src="svg/misg.svg" width="96" height="96" alt="Misg" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/oflow.svg" width="80" alt="oflow" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/opacimeter.svg" width="72" alt="opacimeter" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/ops.svg" width="71" alt="ops" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/paas.svg" width="78" alt="paas" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/pax.svg" width="82" alt="pax" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/mss.svg">
+        <img src="svg/mss.svg" width="96" height="96" alt="Mss" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/nanodma.svg">
+        <img src="svg/nanodma.svg" width="96" height="96" alt="Nanodma" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/nebulizer.svg">
+        <img src="svg/nebulizer.svg" width="96" height="96" alt="Nebulizer" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/nebulizer2.svg">
+        <img src="svg/nebulizer2.svg" width="96" height="96" alt="Nebulizer2" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/pine.svg" width="35" alt="pine" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/ptaam.svg" width="90" alt="ptaam" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/rotating-disk-diluter.svg" width="90" alt="rotating-disk-diluter" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/smps.svg" width="58" alt="smps" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/sp2.svg" width="82" alt="sp2" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/neutralizer.svg">
+        <img src="svg/neutralizer.svg" width="96" height="96" alt="Neutralizer" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/oflow.svg">
+        <img src="svg/oflow.svg" width="96" height="96" alt="Oflow" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/opacimeter.svg">
+        <img src="svg/opacimeter.svg" width="96" height="96" alt="Opacimeter" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/ops.svg">
+        <img src="svg/ops.svg" width="96" height="96" alt="Ops" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/sp2xr.svg" width="46" alt="sp2xr" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/spg.svg" width="65" alt="spg" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/stripper.svg" width="90" alt="stripper" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/syringe-pump.svg" width="62" alt="syringe-pump" />
-</td>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/teom.svg" width="37" alt="teom" />
-</td>
+    <td align="center" valign="middle">
+      <a href="svg/paas.svg">
+        <img src="svg/paas.svg" width="96" height="96" alt="Paas" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/pax.svg">
+        <img src="svg/pax.svg" width="96" height="96" alt="Pax" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/pine.svg">
+        <img src="svg/pine.svg" width="96" height="96" alt="Pine" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/ptaam.svg">
+        <img src="svg/ptaam.svg" width="96" height="96" alt="Ptaam" /><br />
+      </a>
+    </td>
   </tr>
   <tr>
-<td align="center" width="120" height="80" valign="middle">
-  <img src="svg/udac.svg" width="39" alt="udac" />
-</td>
-<td align="center" width="120"></td>
-<td align="center" width="120"></td>
-<td align="center" width="120"></td>
-<td align="center" width="120"></td>
+    <td align="center" valign="middle">
+      <a href="svg/rotating-disk-diluter.svg">
+        <img src="svg/rotating-disk-diluter.svg" width="96" height="96" alt="Rotating Disk Diluter" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/smps.svg">
+        <img src="svg/smps.svg" width="96" height="96" alt="Smps" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/sp2.svg">
+        <img src="svg/sp2.svg" width="96" height="96" alt="Sp2" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/sp2xr.svg">
+        <img src="svg/sp2xr.svg" width="96" height="96" alt="Sp2Xr" /><br />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="svg/spg.svg">
+        <img src="svg/spg.svg" width="96" height="96" alt="Spg" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/stripper.svg">
+        <img src="svg/stripper.svg" width="96" height="96" alt="Stripper" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/syringe-pump.svg">
+        <img src="svg/syringe-pump.svg" width="96" height="96" alt="Syringe Pump" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="svg/teom.svg">
+        <img src="svg/teom.svg" width="96" height="96" alt="Teom" /><br />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="svg/udac.svg">
+        <img src="svg/udac.svg" width="96" height="96" alt="Udac" /><br />
+      </a>
+    </td>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center"></td>
   </tr>
 </table>
 <!-- SVG_GRID_END -->
