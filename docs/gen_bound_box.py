@@ -136,7 +136,7 @@ def standardize_svg_bounding_boxes(
 
 
 if __name__ == "__main__":
-    folder_to_clean = "../svg"
+    folder_to_clean = "./svg"
 
     # Option A: Automatically use max width & max height found across all SVGs
     standardize_svg_bounding_boxes(folder_to_clean)
