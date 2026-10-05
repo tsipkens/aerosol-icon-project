@@ -273,6 +273,11 @@ Contributions should attempt to adhere to the following principles:
   </tr>
   <tr>
     <td align="center" valign="middle">
+      <a href="svg/neutralizer-2.svg">
+        <img src="svg/neutralizer-2.svg" width="96" height="96" alt="Neutralizer 2" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
       <a href="svg/neutralizer.svg">
         <img src="svg/neutralizer.svg" width="96" height="96" alt="Neutralizer" /><br />
       </a>
@@ -287,13 +292,13 @@ Contributions should attempt to adhere to the following principles:
         <img src="svg/open-cpc.svg" width="96" height="96" alt="Open Cpc" /><br />
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="middle">
       <a href="svg/ops.svg">
         <img src="svg/ops.svg" width="96" height="96" alt="Ops" /><br />
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="middle">
       <a href="svg/organic-coating-unit.svg">
         <img src="svg/organic-coating-unit.svg" width="96" height="96" alt="Organic Coating Unit" /><br />
@@ -309,13 +314,13 @@ Contributions should attempt to adhere to the following principles:
         <img src="svg/paas.svg" width="96" height="96" alt="Paas" /><br />
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="middle">
       <a href="svg/partector-tem.svg">
         <img src="svg/partector-tem.svg" width="96" height="96" alt="Partector Tem" /><br />
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="middle">
       <a href="svg/pax.svg">
         <img src="svg/pax.svg" width="96" height="96" alt="Pax" /><br />
@@ -331,13 +336,13 @@ Contributions should attempt to adhere to the following principles:
         <img src="svg/pump-2.svg" width="96" height="96" alt="Pump 2" /><br />
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="middle">
       <a href="svg/pump.svg">
         <img src="svg/pump.svg" width="96" height="96" alt="Pump" /><br />
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="middle">
       <a href="svg/rotating-disk-diluter.svg">
         <img src="svg/rotating-disk-diluter.svg" width="96" height="96" alt="Rotating Disk Diluter" /><br />
@@ -353,13 +358,13 @@ Contributions should attempt to adhere to the following principles:
         <img src="svg/smps.svg" width="96" height="96" alt="Smps" /><br />
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="middle">
       <a href="svg/sp2-xr.svg">
         <img src="svg/sp2-xr.svg" width="96" height="96" alt="Sp2 Xr" /><br />
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="middle">
       <a href="svg/sp2.svg">
         <img src="svg/sp2.svg" width="96" height="96" alt="Sp2" /><br />
@@ -375,13 +380,13 @@ Contributions should attempt to adhere to the following principles:
         <img src="svg/static-mixer.svg" width="96" height="96" alt="Static Mixer" /><br />
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="middle">
       <a href="svg/syringe-pump.svg">
         <img src="svg/syringe-pump.svg" width="96" height="96" alt="Syringe Pump" /><br />
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="middle">
       <a href="svg/teom.svg">
         <img src="svg/teom.svg" width="96" height="96" alt="Teom" /><br />
@@ -397,7 +402,6 @@ Contributions should attempt to adhere to the following principles:
         <img src="svg/udac.svg" width="96" height="96" alt="Udac" /><br />
       </a>
     </td>
-    <td align="center"></td>
   </tr>
 </table>
 <!-- SVG_GRID_END -->
