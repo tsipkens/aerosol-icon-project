@@ -371,17 +371,22 @@ Contributions should attempt to adhere to the following principles:
       </a>
     </td>
     <td align="center" valign="middle">
+      <a href="svg/spark-ablation.svg">
+        <img src="svg/spark-ablation.svg" width="96" height="96" alt="Spark Ablation" /><br />
+      </a>
+    </td>
+    <td align="center" valign="middle">
       <a href="svg/spg.svg">
         <img src="svg/spg.svg" width="96" height="96" alt="Spg" /><br />
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="middle">
       <a href="svg/static-mixer.svg">
         <img src="svg/static-mixer.svg" width="96" height="96" alt="Static Mixer" /><br />
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center" valign="middle">
       <a href="svg/syringe-pump.svg">
         <img src="svg/syringe-pump.svg" width="96" height="96" alt="Syringe Pump" /><br />
@@ -397,11 +402,16 @@ Contributions should attempt to adhere to the following principles:
         <img src="svg/thermophoretic-sampler.svg" width="96" height="96" alt="Thermophoretic Sampler" /><br />
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center" valign="middle">
       <a href="svg/udac.svg">
         <img src="svg/udac.svg" width="96" height="96" alt="Udac" /><br />
       </a>
     </td>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center"></td>
   </tr>
 </table>
 <!-- SVG_GRID_END -->
