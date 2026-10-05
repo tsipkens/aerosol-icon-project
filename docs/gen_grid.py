@@ -6,7 +6,7 @@ def update_readme_with_svg_table(
     svg_folder: str = "./icons",
     readme_path: str = "README.md",
     columns: int = 4,
-    icon_size: int = 48,
+    icon_size: int = 96,
 ):
     """Generates an HTML table (without headers) with linked SVGs and inserts it into README.md."""
     svg_dir = Path(svg_folder)
