@@ -138,7 +138,7 @@ def standardize_svg_bounding_boxes(
         # Save back to file
         out_path = Path(target_path) / svg_path.name
         tree.write(out_path, encoding="utf-8", xml_declaration=True)
-        print(f"✔ Standardized: {svg_path.name}")
+        print(f"Standardized: {svg_path.name}")
         modified_count += 1
 
     print(

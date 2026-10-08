@@ -60,7 +60,7 @@ def update_readme_with_svg_table(
     # 4. Save to README.md
     readme.write_text(updated_content, encoding="utf-8")
     print(
-        f"✔ Successfully updated '{readme_path}' with {len(svg_files)} clickable SVGs (HTML table, no headers)!"
+        f"Successfully updated '{readme_path}' with {len(svg_files)} clickable SVGs (HTML table, no headers)!"
     )
 
 

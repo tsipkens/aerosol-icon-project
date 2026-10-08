@@ -32,6 +32,7 @@ A public icon pack for a range of common aerosol-related devices, provided as SV
 <a href="svg/electrospray.svg"><img src="svg/electrospray.svg" width="96" height="96" alt="Electrospray" title="electrospray" /></a>
 <a href="svg/elpi.svg"><img src="svg/elpi.svg" width="96" height="96" alt="Elpi" title="elpi" /></a>
 <a href="svg/esp-nano.svg"><img src="svg/esp-nano.svg" width="96" height="96" alt="Esp Nano" title="esp-nano" /></a>
+<a href="svg/esp.svg"><img src="svg/esp.svg" width="96" height="96" alt="Esp" title="esp" /></a>
 <a href="svg/fcae.svg"><img src="svg/fcae.svg" width="96" height="96" alt="Fcae" title="fcae" /></a>
 <a href="svg/filter-holder.svg"><img src="svg/filter-holder.svg" width="96" height="96" alt="Filter Holder" title="filter-holder" /></a>
 <a href="svg/fluidized-bed-generator.svg"><img src="svg/fluidized-bed-generator.svg" width="96" height="96" alt="Fluidized Bed Generator" title="fluidized-bed-generator" /></a>
