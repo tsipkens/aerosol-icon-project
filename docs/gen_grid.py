@@ -32,7 +32,7 @@ def update_readme_with_svg_table(
 
         cell = (
             f'<a href="{rel_path}">'
-            f'<img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" title="{name}" />'
+            f'<img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" title="{svg_file.stem}" />'
             # f"        <sub><b>{name}</b></sub>\n"
             f"</a>"
         )
@@ -60,7 +60,7 @@ def update_readme_with_svg_table(
     # 4. Save to README.md
     readme.write_text(updated_content, encoding="utf-8")
     print(
-        f"✔ Successfully updated '{readme_path}' with {len(svg_files)} clickable SVGs (HTML table, no headers)!"
+        f"Successfully updated '{readme_path}' with {len(svg_files)} clickable SVGs (HTML table, no headers)!"
     )
 
 
