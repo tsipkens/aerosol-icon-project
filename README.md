@@ -63,6 +63,7 @@ A public icon pack for a range of common aerosol-related devices, provided as SV
 <a href="svg/oxidation-flow-reactor.svg"><img src="svg/oxidation-flow-reactor.svg" width="96" height="96" alt="Oxidation Flow Reactor" title="oxidation-flow-reactor" /></a>
 <a href="svg/paas.svg"><img src="svg/paas.svg" width="96" height="96" alt="Paas" title="paas" /></a>
 <a href="svg/partector-tem.svg"><img src="svg/partector-tem.svg" width="96" height="96" alt="Partector Tem" title="partector-tem" /></a>
+<a href="svg/partector.svg"><img src="svg/partector.svg" width="96" height="96" alt="Partector" title="partector" /></a>
 <a href="svg/pax.svg"><img src="svg/pax.svg" width="96" height="96" alt="Pax" title="pax" /></a>
 <a href="svg/ptaam.svg"><img src="svg/ptaam.svg" width="96" height="96" alt="Ptaam" title="ptaam" /></a>
 <a href="svg/pump-2.svg"><img src="svg/pump-2.svg" width="96" height="96" alt="Pump 2" title="pump-2" /></a>
