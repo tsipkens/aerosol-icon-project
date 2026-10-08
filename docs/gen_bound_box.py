@@ -31,12 +31,17 @@ def get_svg_dimensions(root: ET.Element) -> Optional[Tuple[float, float, float, 
 
 
 def standardize_svg_bounding_boxes(
-    folder_path: str, target_size: Optional[Tuple[float, float]] = None
+    folder_path: str,
+    target_path: str,
+    target_size: Optional[Tuple[float, float]] = None,
+    padding: float = 0.0,
 ):
     """Processes all SVGs in folder_path to give them a uniform bounding box.
 
     If target_size is None, automatically calculates max(width) and max(height)
     across all valid SVGs.
+
+    padding: Uniform padding applied to all four sides of the final bounding box.
     """
     directory = Path(folder_path)
     if not directory.is_dir():
@@ -74,11 +79,16 @@ def standardize_svg_bounding_boxes(
         return
 
     # Use explicit target_size if passed, otherwise use maximum bounds
-    final_width = target_size[0] if target_size else max_w
-    final_height = target_size[1] if target_size else max_h
+    content_width = target_size[0] if target_size else max_w
+    content_height = target_size[1] if target_size else max_h
+
+    # Add uniform padding to both sides (left/right and top/bottom)
+    total_width = content_width + (2 * padding)
+    total_height = content_height + (2 * padding)
 
     print(
-        f"\nPass 1 Complete. Uniform Bounding Box Size: {final_width:.2f} x {final_height:.2f}"
+        f"\nPass 1 Complete. Base Size: {content_width:.2f} x {content_height:.2f} | "
+        f"Padding: {padding:.2f} | Final Bounding Box Size: {total_width:.2f} x {total_height:.2f}"
     )
     print("Starting Pass 2 (Applying uniform bounding boxes and centering content)...")
 
@@ -87,21 +97,21 @@ def standardize_svg_bounding_boxes(
     for svg_path, (tree, orig_x, orig_y, orig_w, orig_h) in svg_data.items():
         root = tree.getroot()
 
-        # Calculate offset padding required to center the original content
-        pad_x = (final_width - orig_w) / 2.0
-        pad_y = (final_height - orig_h) / 2.0
+        # Calculate offset padding required to center the original content + user padding
+        pad_x = ((content_width - orig_w) / 2.0) + padding
+        pad_y = ((content_height - orig_h) / 2.0) + padding
 
         new_x = orig_x - pad_x
         new_y = orig_y - pad_y
 
         # Update root viewBox to represent uniform bounding dimensions
-        root.attrib["viewBox"] = f"{new_x} {new_y} {final_width} {final_height}"
+        root.attrib["viewBox"] = f"{new_x} {new_y} {total_width} {total_height}"
 
         # Sync explicit width/height attributes if present
         if "width" in root.attrib:
-            root.attrib["width"] = f"{final_width}px"
+            root.attrib["width"] = f"{total_width}px"
         if "height" in root.attrib:
-            root.attrib["height"] = f"{final_height}px"
+            root.attrib["height"] = f"{total_height}px"
 
         # Remove existing full-canvas bounding box rects to prevent duplicates
         for rect in list(root.findall(".//svg:rect", NS)) + list(
@@ -117,8 +127,8 @@ def standardize_svg_bounding_boxes(
                 "id": "bounding-box",
                 "x": str(new_x),
                 "y": str(new_y),
-                "width": str(final_width),
-                "height": str(final_height),
+                "width": str(total_width),
+                "height": str(total_height),
                 "fill": "none",
                 "pointer-events": "all",
             },
@@ -126,20 +136,22 @@ def standardize_svg_bounding_boxes(
         root.insert(0, bbox_rect)
 
         # Save back to file
-        tree.write(svg_path, encoding="utf-8", xml_declaration=True)
+        out_path = Path(target_path) / svg_path.name
+        tree.write(out_path, encoding="utf-8", xml_declaration=True)
         print(f"✔ Standardized: {svg_path.name}")
         modified_count += 1
 
     print(
-        f"\nDone! Successfully updated {modified_count} SVGs to {final_width:.1f}x{final_height:.1f}."
+        f"\nDone! Successfully updated {modified_count} SVGs to {total_width:.1f}x{total_height:.1f} (including {padding}px padding)."
     )
 
 
 if __name__ == "__main__":
-    folder_to_clean = "./svg"
+    folder_to_clean = "./raw"
+    folder_to_output = './svg'
 
-    # Option A: Automatically use max width & max height found across all SVGs
-    standardize_svg_bounding_boxes(folder_to_clean)
+    # Example 1: Automatic bounds + 10px uniform padding
+    standardize_svg_bounding_boxes(folder_to_clean, folder_to_output, padding=10)
 
-    # Option B: Force a specific uniform size (e.g., square 24x24 or 64x64)
-    # standardize_svg_bounding_boxes(folder_to_clean, target_size=(64.0, 64.0))
+    # Example 2: Forced target size (64x64) + 8px uniform padding (Canvas becomes 80x80)
+    # standardize_svg_bounding_boxes(folder_to_clean, target_size=(64.0, 64.0), padding=8.0)
