@@ -22,7 +22,7 @@ def update_readme_with_svg_table(
         return
 
     # 1. Build HTML Table without <thead> or <th>
-    html_lines = ["<!-- SVG_GRID_START -->", "<p align='center'>"]
+    html_lines = ["<!-- SVG_GRID_START -->", "<p align='left'>"]
 
     for i in range(0, len(svg_files)):
         svg_file = svg_files[i]
@@ -31,7 +31,6 @@ def update_readme_with_svg_table(
         name = svg_file.stem.replace("-", " ").replace("_", " ").title()
 
         cell = (
-            f'<td align="center" valign="middle">'
             f'<a href="{rel_path}">'
             f'<img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" />'
             # f"        <sub><b>{name}</b></sub>\n"
