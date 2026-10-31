@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="92.80px" height="36.80px" viewBox="0.400 7.400 23.200 9.200">
+<title>Activated-carbon denuder</title>
+<desc>Activated-carbon denuder: tube with end caps and ports; a cut-away window shows the dark honeycomb carbon monolith</desc>
+<rect x="4.000" y="8.600" width="16.000" height="6.800" rx="1.200" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.000" y="8.000" width="1.800" height="8.000" rx="0.400" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="19.200" y="8.000" width="1.800" height="8.000" rx="0.400" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1.000" y="11.400" width="2.000" height="1.200" rx="0.150" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="21.000" y="11.400" width="2.000" height="1.200" rx="0.150" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.800" y="9.600" width="10.400" height="4.800" rx="0.400" fill="#2E3236" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.420,10.600 L 8.110,11.137 L 7.490,11.137 L 7.180,10.600 L 7.490,10.063 L 8.110,10.063 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.290,12.050 L 8.980,12.587 L 8.360,12.587 L 8.050,12.050 L 8.360,11.513 L 8.980,11.513 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.420,13.500 L 8.110,14.037 L 7.490,14.037 L 7.180,13.500 L 7.490,12.963 L 8.110,12.963 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.170,10.600 L 9.860,11.137 L 9.240,11.137 L 8.930,10.600 L 9.240,10.063 L 9.860,10.063 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.040,12.050 L 10.730,12.587 L 10.110,12.587 L 9.800,12.050 L 10.110,11.513 L 10.730,11.513 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.170,13.500 L 9.860,14.037 L 9.240,14.037 L 8.930,13.500 L 9.240,12.963 L 9.860,12.963 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.920,10.600 L 11.610,11.137 L 10.990,11.137 L 10.680,10.600 L 10.990,10.063 L 11.610,10.063 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.790,12.050 L 12.480,12.587 L 11.860,12.587 L 11.550,12.050 L 11.860,11.513 L 12.480,11.513 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.920,13.500 L 11.610,14.037 L 10.990,14.037 L 10.680,13.500 L 10.990,12.963 L 11.610,12.963 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.670,10.600 L 13.360,11.137 L 12.740,11.137 L 12.430,10.600 L 12.740,10.063 L 13.360,10.063 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.540,12.050 L 14.230,12.587 L 13.610,12.587 L 13.300,12.050 L 13.610,11.513 L 14.230,11.513 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.670,13.500 L 13.360,14.037 L 12.740,14.037 L 12.430,13.500 L 12.740,12.963 L 13.360,12.963 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.420,10.600 L 15.110,11.137 L 14.490,11.137 L 14.180,10.600 L 14.490,10.063 L 15.110,10.063 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 16.290,12.050 L 15.980,12.587 L 15.360,12.587 L 15.050,12.050 L 15.360,11.513 L 15.980,11.513 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.420,13.500 L 15.110,14.037 L 14.490,14.037 L 14.180,13.500 L 14.490,12.963 L 15.110,12.963 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 17.170,10.600 L 16.860,11.137 L 16.240,11.137 L 15.930,10.600 L 16.240,10.063 L 16.860,10.063 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 18.040,12.050 L 17.730,12.587 L 17.110,12.587 L 16.800,12.050 L 17.110,11.513 L 17.730,11.513 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 17.170,13.500 L 16.860,14.037 L 16.240,14.037 L 15.930,13.500 L 16.240,12.963 L 16.860,12.963 Z" fill="#4A5157" stroke="#7D858B" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

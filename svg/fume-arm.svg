@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="85.60px" height="72.00px" viewBox="0.800 2.000 21.400 18.000">
+<title>Fume extraction arm</title>
+<desc>Articulated fume-extraction arm (snorkel): wall mount, two corrugated arm sections with joints and a hood at the end</desc>
+<rect x="1.400" y="2.600" width="2.200" height="8.000" rx="0.400" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.600,5.000 L 13.600,5.000" fill="none" stroke="#1A1A1A" stroke-width="2.115" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 3.600,5.000 L 13.600,5.000" fill="none" stroke="#7D858B" stroke-width="1.800" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 3.600,5.000 L 13.600,5.000" fill="none" stroke="#B5BCC1" stroke-width="0.396" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 4.150,6.000 L 4.150,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 4.700,6.000 L 4.700,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.250,6.000 L 5.250,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.800,6.000 L 5.800,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.350,6.000 L 6.350,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.900,6.000 L 6.900,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 7.450,6.000 L 7.450,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.000,6.000 L 8.000,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.550,6.000 L 8.550,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.100,6.000 L 9.100,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.650,6.000 L 9.650,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.200,6.000 L 10.200,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.750,6.000 L 10.750,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.300,6.000 L 11.300,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.850,6.000 L 11.850,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.400,6.000 L 12.400,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.950,6.000 L 12.950,4.000" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.600,5.000 L 17.000,13.200" fill="none" stroke="#1A1A1A" stroke-width="2.115" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 13.600,5.000 L 17.000,13.200" fill="none" stroke="#7D858B" stroke-width="1.800" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 13.600,5.000 L 17.000,13.200" fill="none" stroke="#B5BCC1" stroke-width="0.396" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 12.887,5.891 L 14.734,5.125" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.098,6.399 L 14.945,5.633" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.308,6.907 L 15.156,6.141" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.519,7.415 L 15.366,6.649" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.730,7.923 L 15.577,7.157" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.940,8.431 L 15.788,7.665" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.151,8.939 L 15.998,8.173" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.362,9.447 L 16.209,8.681" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.572,9.956 L 16.420,9.190" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.783,10.464 L 16.630,9.698" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.993,10.972 L 16.841,10.206" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.204,11.480 L 17.052,10.714" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.415,11.988 L 17.262,11.222" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.625,12.496 L 17.473,11.730" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.836,13.004 L 17.684,12.238" fill="none" stroke="#3E464C" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="3.800" cy="5.000" r="1.600" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="3.800" cy="5.000" r="0.500" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="13.600" cy="5.000" r="1.600" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="13.600" cy="5.000" r="0.500" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.200,13.200 L 18.800,13.200 L 21.600,19.400 L 12.400,19.400 Z" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.000" y="12.600" width="4.000" height="1.200" rx="0.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.400,18.200 L 20.600,18.200" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

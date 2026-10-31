@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="81.40px" height="81.20px" viewBox="2.250 2.300 20.350 20.300">
+<title>Calibration gas cylinders</title>
+<desc>Two small aluminium calibration-gas cylinders (zero and span) chained to a wall strut, one with a single-stage regulator</desc>
+<rect x="20.600" y="5.000" width="1.400" height="17.000" rx="0.300" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.400,21.400 L 3.400,10.400 C 3.400,8.480 4.680,8.000 6.600,8.000 C 8.520,8.000 9.800,8.480 9.800,10.400 L 9.800,21.400 Z" fill="#D5DADD" stroke="none"/>
+<path d="M 3.400,11.800 L 3.400,10.400 C 3.400,8.480 4.680,8.000 6.600,8.000 C 8.520,8.000 9.800,8.480 9.800,10.400 L 9.800,11.800 Z" fill="#F2B33D" stroke="none"/>
+<path d="M 3.400,11.800 L 9.800,11.800" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.400,21.400 L 3.400,10.400 C 3.400,8.480 4.680,8.000 6.600,8.000 C 8.520,8.000 9.800,8.480 9.800,10.400 L 9.800,21.400 Z" fill="none" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.800" y="6.200" width="1.600" height="2.000" rx="0.200" fill="#C9A54A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.200" y="5.400" width="2.800" height="0.900" rx="0.300" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.400,21.400 L 11.400,10.400 C 11.400,8.480 12.680,8.000 14.600,8.000 C 16.520,8.000 17.800,8.480 17.800,10.400 L 17.800,21.400 Z" fill="#D5DADD" stroke="none"/>
+<path d="M 11.400,11.800 L 11.400,10.400 C 11.400,8.480 12.680,8.000 14.600,8.000 C 16.520,8.000 17.800,8.480 17.800,10.400 L 17.800,11.800 Z" fill="#FFFFFF" stroke="none"/>
+<path d="M 11.400,11.800 L 17.800,11.800" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.400,21.400 L 11.400,10.400 C 11.400,8.480 12.680,8.000 14.600,8.000 C 16.520,8.000 17.800,8.480 17.800,10.400 L 17.800,21.400 Z" fill="none" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.800" y="6.200" width="1.600" height="2.000" rx="0.200" fill="#C9A54A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.200" y="5.400" width="2.800" height="0.900" rx="0.300" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.000" y="6.400" width="2.600" height="2.400" rx="0.400" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.300" cy="4.200" r="1.300" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.300,4.200 L 11.080,3.485" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.300" cy="4.200" r="0.180" fill="#1A1A1A" stroke="none"/>
+<ellipse cx="3.650" cy="12.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.350" y="12.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="6.250" cy="12.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.950" y="12.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="8.850" cy="12.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.550" y="12.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="11.450" cy="12.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.150" y="12.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="14.050" cy="12.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="14.750" y="12.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="16.650" cy="12.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17.350" y="12.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="19.250" cy="12.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="3.650" cy="17.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.350" y="17.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="6.250" cy="17.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.950" y="17.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="8.850" cy="17.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.550" y="17.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="11.450" cy="17.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.150" y="17.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="14.050" cy="17.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="14.750" y="17.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="16.650" cy="17.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17.350" y="17.420" width="1.200" height="0.360" rx="0.150" fill="#3E464C" stroke="none"/>
+<ellipse cx="19.250" cy="17.600" rx="0.800" ry="0.450" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

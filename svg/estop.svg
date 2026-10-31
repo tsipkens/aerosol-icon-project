@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60.80px" height="73.60px" viewBox="4.400 4.800 15.200 18.400">
+<title>Emergency stop button</title>
+<desc>Emergency-stop station: yellow enclosure with a red mushroom button and a cable gland</desc>
+<rect x="5.000" y="5.400" width="14.000" height="14.000" rx="1.400" fill="#F2B33D" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="6.000" cy="6.400" r="0.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.820,6.400 L 6.180,6.400" fill="none" stroke="#3E464C" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="18.000" cy="6.400" r="0.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 17.820,6.400 L 18.180,6.400" fill="none" stroke="#3E464C" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="6.000" cy="18.400" r="0.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.820,18.400 L 6.180,18.400" fill="none" stroke="#3E464C" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="18.000" cy="18.400" r="0.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 17.820,18.400 L 18.180,18.400" fill="none" stroke="#3E464C" stroke-width="0.108" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="12.000" cy="12.400" r="5.000" fill="#C28F31" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="12.000" cy="12.400" r="4.000" fill="#D33A2C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10.600" y="19.400" width="2.800" height="1.600" rx="0.300" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.000,21.000 L 12.000,22.600" fill="none" stroke="#3E464C" stroke-width="0.540" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

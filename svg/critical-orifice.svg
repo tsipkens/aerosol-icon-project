@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="94.40px" height="30.40px" viewBox="0.200 8.200 23.600 7.600">
+<title>Critical orifice</title>
+<desc>Critical (sonic) orifice in a holder between two compression nuts; a cut-away window shows the orifice plate and the jet expanding downstream</desc>
+<path d="M 0.800,12.000 L 23.200,12.000" fill="none" stroke="#1A1A1A" stroke-width="1.485" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 0.800,12.000 L 23.200,12.000" fill="none" stroke="#B8C0C6" stroke-width="1.170" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 0.800,12.000 L 23.200,12.000" fill="none" stroke="#EEF1F3" stroke-width="0.257" stroke-linejoin="round" stroke-linecap="butt"/>
+<rect x="7.800" y="8.800" width="8.400" height="6.400" rx="0.800" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.600" y="10.200" width="1.600" height="3.600" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.600,11.208 L 8.200,11.208" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.600,12.792 L 8.200,12.792" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.800" y="10.200" width="1.600" height="3.600" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.800,11.208 L 17.400,11.208" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 15.800,12.792 L 17.400,12.792" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.400" y="10.000" width="5.200" height="4.000" rx="0.300" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.700" y="10.000" width="0.600" height="1.650" fill="#3E464C" stroke="none"/>
+<rect x="11.700" y="12.350" width="0.600" height="1.650" fill="#3E464C" stroke="none"/>
+<path d="M 9.800,12.000 L 11.400,12.000" fill="none" stroke="#2F6DB5" stroke-width="0.270" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.000,11.600 L 11.600,12.000 L 11.000,12.400 Z" fill="#2F6DB5" stroke="none"/>
+<path d="M 12.500,12.000 L 14.200,10.900" fill="none" stroke="#2F6DB5" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.500,12.000 L 14.200,12.000" fill="none" stroke="#2F6DB5" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.500,12.000 L 14.200,13.100" fill="none" stroke="#2F6DB5" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

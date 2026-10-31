@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="81.60px" height="79.20px" viewBox="1.800 2.800 20.400 19.800">
+<title>APS-type aerodynamic sizer</title>
+<desc>Aerodynamic particle sizer in the style of a TSI APS: off-white cabinet, grey display panel, tall inlet nozzle with flange on top</desc>
+<rect x="2.400" y="8.400" width="19.200" height="13.000" rx="1.000" fill="#ECEAE3" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.000" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="19.700" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="3.400" y="9.400" width="8.600" height="5.600" rx="0.800" fill="#B9BDBE" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.200" y="10.200" width="7.000" height="4.000" rx="0.400" fill="#DDEBF4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.450" y="10.450" width="6.500" height="0.500" rx="0.100" fill="#E6F0F7" stroke="none"/>
+<path d="M 5.460,11.533 L 9.240,11.533" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.460,12.867 L 7.700,12.867" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 2.400,16.000 L 21.600,16.000" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.600,10.400 L 20.000,10.400" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.600,11.300 L 20.000,11.300" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.600,12.200 L 20.000,12.200" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.600,13.100 L 20.000,13.100" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="14.000" cy="17.600" r="0.350" fill="#5CC08A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="13.895" cy="17.495" r="0.105" fill="#FFFFFF" stroke="none" fill-opacity="0.7"/>
+<circle cx="4.600" cy="18.600" r="0.450" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.600" y="5.400" width="2.600" height="3.000" rx="0.300" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.000" y="7.400" width="3.800" height="1.000" rx="0.200" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16.300" y="3.400" width="1.200" height="2.100" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

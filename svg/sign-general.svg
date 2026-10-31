@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="84.80px" height="76.00px" viewBox="1.400 2.000 21.200 19.000">
+<title>Warning sign, general</title>
+<desc>Triangular yellow general-warning sign with an exclamation pictogram; no text</desc>
+<path d="M 12.000,2.600 L 22.000,20.400 L 2.000,20.400 Z" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.000,5.000 L 19.800,19.000 L 4.200,19.000 Z" fill="#F7C51E" stroke="none"/>
+<path d="M 11.100,9.000 L 12.900,9.000 L 12.500,14.600 L 11.500,14.600 Z" fill="#22262A" stroke="none"/>
+<circle cx="12.000" cy="16.600" r="0.900" fill="#22262A" stroke="none"/>
+</svg>

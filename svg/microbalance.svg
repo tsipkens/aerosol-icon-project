@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="76.80px" height="76.80px" viewBox="2.400 3.400 19.200 19.200">
+<title>Microbalance (filter weighing)</title>
+<desc>Analytical microbalance for gravimetric filter weighing: white base with display and keys, glass draft shield, weighing pan with a filter</desc>
+<rect x="3.000" y="15.200" width="18.000" height="6.200" rx="1.000" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.600" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="19.100" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="4.800" y="16.400" width="6.400" height="2.800" rx="0.300" fill="#C9D8B8" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.600,17.400 L 9.200,17.400" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.600,18.300 L 7.940,18.300" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.600" y="16.800" width="1.100" height="1.200" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="14.150" y="16.800" width="1.100" height="1.200" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.700" y="16.800" width="1.100" height="1.200" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17.250" y="16.800" width="1.100" height="1.200" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.200" y="4.000" width="13.600" height="11.200" rx="0.600" fill="#E6F2FA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 7.000,5.400 L 7.000,13.800" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 16.000,5.000 L 17.600,7.000" fill="none" stroke="#FFFFFF" stroke-width="0.360" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.600" y="13.000" width="0.800" height="2.200" rx="0.100" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8.600" y="12.400" width="6.800" height="0.700" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="12.000" cy="12.000" rx="2.800" ry="0.550" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="12.000" cy="12.000" rx="1.400" ry="0.280" fill="#A3ADB4" stroke="none"/>
+</svg>

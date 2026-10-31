@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="76.80px" height="68.80px" viewBox="2.400 5.400 19.200 17.200">
+<title>Recirculating chiller</title>
+<desc>Benchtop recirculating chiller: white cabinet with display and keys, supply and return ports at the front, side vents</desc>
+<rect x="3.000" y="6.000" width="18.000" height="15.400" rx="1.000" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.600" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="19.100" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="4.400" y="7.400" width="8.400" height="4.400" rx="0.400" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.400,9.600 L 9.600,9.600" fill="none" stroke="#3A9CA6" stroke-width="0.405" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.600" y="12.600" width="2.000" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.100" y="12.600" width="2.000" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.600" y="12.600" width="2.000" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.400,8.000 L 19.400,8.000" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.400,8.900 L 19.400,8.900" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.400,9.800 L 19.400,9.800" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.400,10.700 L 19.400,10.700" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.400,11.600 L 19.400,11.600" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.400,12.500 L 19.400,12.500" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.400" y="15.600" width="8.400" height="4.600" rx="0.400" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="6.600" cy="17.900" r="1.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="6.600" cy="17.900" r="0.500" fill="#3A9CA6" stroke="none"/>
+<circle cx="10.600" cy="17.900" r="1.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.600" cy="17.900" r="0.500" fill="#E07B39" stroke="none"/>
+<circle cx="16.600" cy="17.800" r="0.350" fill="#5CC08A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="16.495" cy="17.695" r="0.105" fill="#FFFFFF" stroke="none" fill-opacity="0.7"/>
+</svg>

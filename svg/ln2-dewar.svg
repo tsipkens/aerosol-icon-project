@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="105.60px" height="174.40px" viewBox="10.800 1.000 26.400 43.600">
+<title>Liquid nitrogen dewar</title>
+<desc>Self-pressurising liquid-nitrogen dewar (Dura-Cyl style) on a castor base: stainless vessel with a blue cryogen band and frost near the liquid valve, guard ring, pressure gauge, liquid valve (blue handwheel), vent valve (amber handwheel) and relief valve</desc>
+<rect x="11.400" y="39.600" width="25.200" height="1.800" rx="0.500" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.600" y="41.400" width="1.200" height="0.600" rx="0.100" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="14.200" cy="42.900" r="1.100" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="23.400" y="41.400" width="1.200" height="0.600" rx="0.100" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="24.000" cy="42.900" r="1.100" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="33.200" y="41.400" width="1.200" height="0.600" rx="0.100" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="33.800" cy="42.900" r="1.100" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.000,39.800 L 13.000,14.600 C 13.000,11.720 17.400,11.000 24.000,11.000 C 30.600,11.000 35.000,11.720 35.000,14.600 L 35.000,39.800 Z" fill="#B8C0C6" stroke="none"/>
+<path d="M 13.000,39.800 L 13.000,14.600 C 13.000,11.720 17.400,11.000 24.000,11.000 C 30.600,11.000 35.000,11.720 35.000,14.600 L 35.000,39.800 Z" fill="none" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.000" y="21.000" width="22.000" height="2.200" fill="#2F6DB5" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="17.200" cy="13.600" r="1.000" fill="#E8F6FB" stroke="none" fill-opacity="0.85"/>
+<circle cx="18.800" cy="15.200" r="0.800" fill="#E8F6FB" stroke="none" fill-opacity="0.85"/>
+<circle cx="16.200" cy="15.800" r="0.700" fill="#E8F6FB" stroke="none" fill-opacity="0.85"/>
+<circle cx="19.600" cy="13.200" r="0.600" fill="#E8F6FB" stroke="none" fill-opacity="0.85"/>
+<rect x="14.000" y="7.600" width="1.000" height="4.600" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="33.000" y="7.600" width="1.000" height="4.600" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.000" y="6.600" width="24.000" height="1.400" rx="0.600" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="21.400" y="8.800" width="5.200" height="2.600" rx="0.400" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="23.600" y="5.400" width="0.800" height="3.400" rx="0.100" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="24.000" cy="3.600" r="2.000" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 24.000,3.600 L 25.200,2.500" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="24.000" cy="3.600" r="0.180" fill="#1A1A1A" stroke="none"/>
+<rect x="18.600" y="9.400" width="2.800" height="1.000" rx="0.100" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17.600" y="8.000" width="1.200" height="3.800" rx="0.400" fill="#2F6DB5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="26.600" y="9.400" width="2.800" height="1.000" rx="0.100" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="29.200" y="8.000" width="1.200" height="3.800" rx="0.400" fill="#F2B33D" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="25.400" y="7.000" width="1.000" height="1.800" rx="0.200" fill="#C9A54A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="85.40px" height="84.80px" viewBox="1.250 0.800 21.350 21.200">
+<title>Pitot-static probe with manometer</title>
+<desc>Pitot-static probe (tip pointing upstream to the left, static holes along the tip) with two tubes to a hand-held differential manometer</desc>
+<path d="M 2.400,8.600 L 11.400,8.600 L 11.400,3.000" fill="none" stroke="#1A1A1A" stroke-width="1.305" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 2.400,8.600 L 11.400,8.600 L 11.400,3.000" fill="none" stroke="#B8C0C6" stroke-width="0.990" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 2.400,8.600 L 11.400,8.600 L 11.400,3.000" fill="none" stroke="#EEF1F3" stroke-width="0.218" stroke-linejoin="round" stroke-linecap="butt"/>
+<circle cx="2.400" cy="8.600" r="0.550" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="5.000" cy="8.600" r="0.160" fill="#3E464C" stroke="none"/>
+<circle cx="6.200" cy="8.600" r="0.160" fill="#3E464C" stroke="none"/>
+<circle cx="7.400" cy="8.600" r="0.160" fill="#3E464C" stroke="none"/>
+<path d="M 11.000,3.000 C 11.000,1.400 16.400,1.600 16.400,9.400" fill="none" stroke="#1A1A1A" stroke-width="0.630" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.000,3.000 C 11.000,1.400 16.400,1.600 16.400,9.400" fill="none" stroke="#2A2D30" stroke-width="0.360" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.800,4.600 C 13.600,4.000 19.000,4.000 19.000,9.400" fill="none" stroke="#1A1A1A" stroke-width="0.630" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.800,4.600 C 13.600,4.000 19.000,4.000 19.000,9.400" fill="none" stroke="#D9E7EE" stroke-width="0.360" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.600" y="9.400" width="8.400" height="12.000" rx="1.200" fill="#F2B33D" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="14.800" y="10.800" width="6.000" height="4.000" rx="0.400" fill="#C9D8B8" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.050" y="11.050" width="5.500" height="0.500" rx="0.100" fill="#D6E2CA" stroke="none"/>
+<path d="M 15.880,12.800 L 19.120,12.800" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.000" y="16.400" width="1.400" height="1.000" rx="0.150" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.000" y="17.900" width="1.400" height="1.000" rx="0.150" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16.800" y="16.400" width="1.400" height="1.000" rx="0.150" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16.800" y="17.900" width="1.400" height="1.000" rx="0.150" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="18.600" y="16.400" width="1.400" height="1.000" rx="0.150" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="18.600" y="17.900" width="1.400" height="1.000" rx="0.150" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

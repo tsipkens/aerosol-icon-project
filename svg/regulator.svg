@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="88.00px" height="73.60px" viewBox="1.800 1.800 22.000 18.400">
+<title>Two-stage cylinder regulator</title>
+<desc>Two-stage gas regulator: chrome body, inlet nut (brass) at the left, inlet and delivery gauges, adjusting knob below and outlet needle valve at the right</desc>
+<rect x="2.400" y="11.200" width="2.600" height="2.600" rx="0.300" fill="#C9A54A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.200" y="11.000" width="2.000" height="3.000" rx="0.200" fill="#C9A54A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.200,11.840 L 7.200,11.840" fill="none" stroke="#836B30" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.200,13.160 L 7.200,13.160" fill="none" stroke="#836B30" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="9.400" width="8.600" height="6.200" rx="1.200" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8.800" y="6.600" width="1.000" height="2.800" rx="0.100" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="9.300" cy="4.800" r="2.400" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.300,4.800 L 10.740,3.480" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="9.300" cy="4.800" r="0.180" fill="#1A1A1A" stroke="none"/>
+<rect x="13.800" y="6.600" width="1.000" height="2.800" rx="0.100" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="14.300" cy="4.800" r="2.400" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.300,4.800 L 15.740,3.480" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="14.300" cy="4.800" r="0.180" fill="#1A1A1A" stroke="none"/>
+<rect x="11.000" y="15.600" width="1.400" height="1.400" rx="0.100" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.000" y="17.000" width="5.400" height="2.600" rx="0.800" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.200,17.400 L 10.200,19.200" fill="none" stroke="#5C646B" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.700,17.400 L 11.700,19.200" fill="none" stroke="#5C646B" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.200,17.400 L 13.200,19.200" fill="none" stroke="#5C646B" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16.000" y="11.600" width="3.000" height="1.800" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="19.600" cy="12.500" r="1.200" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 20.600,12.500 L 23.200,12.500" fill="none" stroke="#1A1A1A" stroke-width="1.125" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 20.600,12.500 L 23.200,12.500" fill="none" stroke="#B8C0C6" stroke-width="0.810" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M 20.600,12.500 L 23.200,12.500" fill="none" stroke="#EEF1F3" stroke-width="0.178" stroke-linejoin="round" stroke-linecap="butt"/>
+</svg>

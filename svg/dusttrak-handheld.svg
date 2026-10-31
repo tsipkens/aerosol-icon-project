@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="36.80px" height="80.80px" viewBox="7.400 1.800 9.200 20.200">
+<title>DustTrak-type monitor, hand-held</title>
+<desc>Hand-held photometric aerosol monitor in the style of a TSI DustTrak II hand-held: tall royal-blue body, black head with blue screen and three keys, inlet on top</desc>
+<rect x="8.000" y="5.200" width="8.000" height="16.200" rx="1.600" fill="#2C4596" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8.000" y="5.200" width="8.000" height="7.800" rx="1.400" fill="#1E2124" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.000" y="6.200" width="6.000" height="4.200" rx="0.300" fill="#3F86D8" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.800,7.600 L 13.400,7.600" fill="none" stroke="#FFFFFF" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.800,8.800 L 12.140,8.800" fill="none" stroke="#FFFFFF" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.200" y="11.200" width="1.600" height="0.900" rx="0.200" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.200" y="11.200" width="1.600" height="0.900" rx="0.200" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.200" y="11.200" width="1.600" height="0.900" rx="0.200" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.400,14.400 L 14.600,14.400" fill="none" stroke="#6174B0" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.400,15.400 L 14.600,15.400" fill="none" stroke="#6174B0" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.400,16.400 L 14.600,16.400" fill="none" stroke="#6174B0" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.400,17.400 L 14.600,17.400" fill="none" stroke="#6174B0" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.400,18.400 L 14.600,18.400" fill="none" stroke="#6174B0" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10.400" y="4.000" width="3.200" height="1.400" rx="0.300" fill="#1E2124" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.400" y="2.400" width="1.200" height="1.700" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="88.00px" height="35.20px" viewBox="1.000 7.400 22.000 8.800">
+<title>Safety glasses</title>
+<desc>Wrap-around safety glasses with clear lenses and side arms</desc>
+<path d="M 1.600,9.600 L 3.000,9.000" fill="none" stroke="#3E464C" stroke-width="0.720" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 22.400,9.600 L 21.000,9.000" fill="none" stroke="#3E464C" stroke-width="0.720" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.200,9.000 L 11.600,9.000 Q 11.800,15.600 7.400,15.600 Q 3.000,15.600 3.200,9.000 Z" fill="#D6EAF5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round" fill-opacity="0.9"/>
+<path d="M 4.800,10.400 L 6.400,12.600" fill="none" stroke="#FFFFFF" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.400,9.000 L 20.800,9.000 Q 21.000,15.600 16.600,15.600 Q 12.200,15.600 12.400,9.000 Z" fill="#D6EAF5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round" fill-opacity="0.9"/>
+<path d="M 14.000,10.400 L 15.600,12.600" fill="none" stroke="#FFFFFF" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2.800" y="8.000" width="18.400" height="1.600" rx="0.600" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.600,9.600 Q 12.000,11.600 13.400,9.600" fill="none" stroke="#3E464C" stroke-width="0.540" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

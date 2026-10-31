@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="84.80px" height="71.20px" viewBox="1.400 4.800 21.200 17.800">
+<title>Filter smoke meter (FSN type)</title>
+<desc>Filter-type smoke meter (AVL 415 style): grey cabinet with display and keys; a window shows the white filter-paper strip between two reels with a dark soot spot</desc>
+<rect x="2.000" y="7.000" width="20.000" height="14.400" rx="1.000" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2.600" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="20.100" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="3.400" y="8.400" width="6.600" height="4.400" rx="0.400" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.650" y="8.650" width="6.100" height="0.500" rx="0.100" fill="#6E7479" stroke="none"/>
+<path d="M 4.588,9.867 L 8.152,9.867" fill="none" stroke="#BFDDF0" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 4.588,11.333 L 6.700,11.333" fill="none" stroke="#BFDDF0" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.600" y="14.000" width="1.600" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.600" y="15.500" width="1.600" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.700" y="14.000" width="1.600" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.700" y="15.500" width="1.600" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.800" y="14.000" width="1.600" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.800" y="15.500" width="1.600" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.400" y="8.400" width="9.200" height="8.400" rx="0.500" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="13.400" cy="10.600" r="1.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="18.600" cy="10.600" r="1.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.000" y="12.800" width="8.000" height="2.200" rx="0.100" fill="#FAFAF6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 13.400,11.900 L 12.400,12.800" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 18.600,11.900 L 19.600,12.800" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="16.000" cy="13.900" r="0.850" fill="#2A2D30" stroke="none"/>
+<rect x="4.450" y="5.400" width="1.100" height="1.600" rx="0.150" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.600,18.200 L 20.400,18.200" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.600,19.000 L 20.400,19.000" fill="none" stroke="#A3ADB4" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

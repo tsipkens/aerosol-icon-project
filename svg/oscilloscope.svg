@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="84.80px" height="68.80px" viewBox="1.400 5.400 21.200 17.200">
+<title>Oscilloscope</title>
+<desc>Benchtop digital oscilloscope: dark screen with a graticule and two traces, knobs, and BNC inputs along the bottom</desc>
+<rect x="2.000" y="6.000" width="20.000" height="15.400" rx="1.000" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2.600" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="20.100" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="3.200" y="7.200" width="11.400" height="9.600" rx="0.400" fill="#22262A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 5.480,7.600 L 5.480,16.400" fill="none" stroke="#4A5157" stroke-width="0.090" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 7.760,7.600 L 7.760,16.400" fill="none" stroke="#4A5157" stroke-width="0.090" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.040,7.600 L 10.040,16.400" fill="none" stroke="#4A5157" stroke-width="0.090" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.320,7.600 L 12.320,16.400" fill="none" stroke="#4A5157" stroke-width="0.090" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.600,9.600 L 14.200,9.600" fill="none" stroke="#4A5157" stroke-width="0.090" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.600,12.000 L 14.200,12.000" fill="none" stroke="#4A5157" stroke-width="0.090" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.600,14.400 L 14.200,14.400" fill="none" stroke="#4A5157" stroke-width="0.090" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.600,10.400 L 3.800,9.964 L 4.000,9.548 L 4.200,9.174 L 4.400,8.859 L 4.600,8.618 L 4.800,8.463 L 5.000,8.401 L 5.200,8.436 L 5.400,8.565 L 5.600,8.783 L 5.800,9.079 L 6.000,9.438 L 6.200,9.844 L 6.400,10.277 L 6.600,10.715 L 6.800,11.139 L 7.000,11.527 L 7.200,11.860 L 7.400,12.123 L 7.600,12.303 L 7.800,12.391 L 8.000,12.384 L 8.200,12.280 L 8.400,12.086 L 8.600,11.811 L 8.800,11.468 L 9.000,11.073 L 9.200,10.646 L 9.400,10.207 L 9.600,9.777 L 9.800,9.377 L 10.000,9.027 L 10.200,8.743 L 10.400,8.538 L 10.600,8.424 L 10.800,8.404 L 11.000,8.481 L 11.200,8.651 L 11.400,8.904 L 11.600,9.230 L 11.800,9.612 L 12.000,10.033 L 12.200,10.470 L 12.400,10.905 L 12.600,11.315 L 12.800,11.681 L 13.000,11.985 L 13.200,12.213 L 13.400,12.354 L 13.600,12.400 L 13.800,12.350 L 14.000,12.206" fill="none" stroke="#F2B33D" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 3.600,15.000 L 6.200,15.000 L 6.200,13.200 L 8.800,13.200 L 8.800,15.000 L 11.400,15.000 L 11.400,13.200 L 14.200,13.200" fill="none" stroke="#4FC3D9" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="16.600" cy="8.600" r="0.850" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 16.600,8.600 L 17.068,8.133" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="19.400" cy="8.600" r="0.850" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 19.400,8.600 L 19.868,8.133" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="16.600" cy="11.200" r="0.850" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 16.600,11.200 L 17.068,10.732" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="19.400" cy="11.200" r="0.850" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 19.400,11.200 L 19.868,10.732" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="16.600" cy="13.800" r="0.850" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 16.600,13.800 L 17.068,13.333" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="19.400" cy="13.800" r="0.850" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 19.400,13.800 L 19.868,13.333" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="4.600" cy="18.800" r="0.900" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="4.600" cy="18.800" r="0.350" fill="#3E464C" stroke="none"/>
+<circle cx="7.600" cy="18.800" r="0.900" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="7.600" cy="18.800" r="0.350" fill="#3E464C" stroke="none"/>
+<circle cx="10.600" cy="18.800" r="0.900" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.600" cy="18.800" r="0.350" fill="#3E464C" stroke="none"/>
+<circle cx="13.600" cy="18.800" r="0.900" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="13.600" cy="18.800" r="0.350" fill="#3E464C" stroke="none"/>
+<rect x="16.400" y="17.800" width="4.400" height="1.800" rx="0.300" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

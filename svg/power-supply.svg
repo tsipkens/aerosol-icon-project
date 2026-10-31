@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80.00px" height="60.80px" viewBox="2.000 7.400 20.000 15.200">
+<title>Bench DC power supply</title>
+<desc>Bench DC power supply: voltage and current displays (red and green), two knobs, red, black and green binding posts</desc>
+<rect x="2.600" y="8.000" width="18.800" height="13.400" rx="1.000" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.200" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="19.500" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="3.800" y="9.200" width="7.400" height="3.400" rx="0.300" fill="#22262A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.600" y="9.900" width="1.400" height="2.000" rx="0.200" fill="none" stroke="#E5484D" stroke-width="0.270" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.700" y="9.900" width="1.400" height="2.000" rx="0.200" fill="none" stroke="#E5484D" stroke-width="0.270" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8.800" y="9.900" width="1.400" height="2.000" rx="0.200" fill="none" stroke="#E5484D" stroke-width="0.270" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.400" y="9.200" width="7.400" height="3.400" rx="0.300" fill="#22262A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.200" y="9.900" width="1.400" height="2.000" rx="0.200" fill="none" stroke="#4CC38A" stroke-width="0.270" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.300" y="9.900" width="1.400" height="2.000" rx="0.200" fill="none" stroke="#4CC38A" stroke-width="0.270" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17.400" y="9.900" width="1.400" height="2.000" rx="0.200" fill="none" stroke="#4CC38A" stroke-width="0.270" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="6.200" cy="15.600" r="1.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.200,15.600 L 6.915,14.885" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.400" cy="15.600" r="1.300" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.400,15.600 L 11.115,14.885" fill="none" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="14.200" cy="15.600" r="0.950" fill="#E5484D" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="16.800" cy="15.600" r="0.950" fill="#22262A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="19.400" cy="15.600" r="0.950" fill="#3C9A5F" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.800" y="18.400" width="2.200" height="1.400" rx="0.200" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="81.60px" height="81.60px" viewBox="1.800 2.200 20.400 20.400">
+<title>DustTrak-type monitor, desktop</title>
+<desc>Desktop photometric aerosol monitor in the style of a TSI DustTrak DRX: royal-blue case, black bezel round a blue touch screen, grey base trim, black inlet with a short nozzle at the top right</desc>
+<rect x="2.400" y="7.400" width="19.200" height="14.000" rx="1.400" fill="#2C4596" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2.400" y="18.800" width="19.200" height="2.600" rx="0.800" fill="#B9BEC4" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.200" y="8.600" width="15.600" height="9.400" rx="0.800" fill="#1E2124" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.200" y="9.400" width="11.200" height="7.800" rx="0.300" fill="#3F86D8" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="5.500" y="9.700" width="10.600" height="0.600" rx="0.100" fill="#79AAE4" stroke="none"/>
+<path d="M 6.400,11.600 L 12.400,11.600" fill="none" stroke="#FFFFFF" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.400,12.900 L 10.300,12.900" fill="none" stroke="#FFFFFF" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.400,14.200 L 10.300,14.200" fill="none" stroke="#FFFFFF" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.400" y="13.400" width="3.000" height="2.600" rx="0.200" fill="#FFFFFF" stroke="none" fill-opacity="0.35"/>
+<circle cx="18.100" cy="15.600" r="0.750" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16.600" y="4.600" width="2.800" height="2.900" rx="0.400" fill="#1E2124" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17.400" y="2.800" width="1.200" height="1.900" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3.000" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="19.700" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="62.40px" height="85.60px" viewBox="5.200 1.200 15.600 21.400">
+<title>Cascade impactor (MOUDI type)</title>
+<desc>Multi-stage cascade impactor stack: inlet cone, aluminium stages with tie rods, rotating drive base and outlet</desc>
+<rect x="5.800" y="18.200" width="12.400" height="3.200" rx="0.500" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="7.400" cy="19.800" r="0.300" fill="#5CC08A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="7.310" cy="19.710" r="0.090" fill="#FFFFFF" stroke="none" fill-opacity="0.7"/>
+<rect x="18.200" y="19.300" width="2.000" height="1.000" rx="0.150" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="6.400" width="9.200" height="1.950" rx="0.250" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.000,7.000 L 16.000,7.000" fill="none" stroke="#A3ADB4" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="8.350" width="9.200" height="1.950" rx="0.250" fill="#D5DADD" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.000,8.950 L 16.000,8.950" fill="none" stroke="#A3ADB4" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="10.300" width="9.200" height="1.950" rx="0.250" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.000,10.900 L 16.000,10.900" fill="none" stroke="#A3ADB4" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="12.250" width="9.200" height="1.950" rx="0.250" fill="#D5DADD" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.000,12.850 L 16.000,12.850" fill="none" stroke="#A3ADB4" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="14.200" width="9.200" height="1.950" rx="0.250" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.000,14.800 L 16.000,14.800" fill="none" stroke="#A3ADB4" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="16.150" width="9.200" height="1.950" rx="0.250" fill="#D5DADD" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.000,16.750 L 16.000,16.750" fill="none" stroke="#A3ADB4" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.400" y="5.400" width="0.600" height="12.800" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.100" y="4.800" width="1.200" height="0.800" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.436,4.800 L 6.436,5.600" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 6.964,4.800 L 6.964,5.600" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="17.000" y="5.400" width="0.600" height="12.800" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16.700" y="4.800" width="1.200" height="0.800" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 17.036,4.800 L 17.036,5.600" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 17.564,4.800 L 17.564,5.600" fill="none" stroke="#787D81" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.400,3.000 L 13.600,3.000 L 15.600,6.400 L 8.400,6.400 Z" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.200" y="1.800" width="1.600" height="1.300" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.400" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+<rect x="16.300" y="21.400" width="1.300" height="0.600" rx="0.150" fill="#3E464C" stroke="none"/>
+</svg>

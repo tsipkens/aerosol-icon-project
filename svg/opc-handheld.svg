@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="41.60px" height="84.00px" viewBox="6.800 1.000 10.400 21.000">
+<title>Hand-held optical particle counter</title>
+<desc>Hand-held optical particle counter: grey body with teal rubber grips, screen, keypad and isokinetic inlet on top</desc>
+<rect x="7.400" y="4.800" width="9.200" height="16.600" rx="1.800" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="6.000" width="1.000" height="14.000" rx="0.400" fill="#3A9CA6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.600" y="6.000" width="1.000" height="14.000" rx="0.400" fill="#3A9CA6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.000" y="6.600" width="6.000" height="5.000" rx="0.400" fill="#BFDDF0" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.250" y="6.850" width="5.500" height="0.500" rx="0.100" fill="#CFE6F4" stroke="none"/>
+<path d="M 10.080,8.267 L 13.320,8.267" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.080,9.933 L 12.000,9.933" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.200" y="13.000" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.200" y="14.450" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.200" y="15.900" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.000" y="13.000" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.000" y="14.450" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.000" y="15.900" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.800" y="13.000" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.800" y="14.450" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12.800" y="15.900" width="1.400" height="1.000" rx="0.150" fill="#F4F6F7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10.600" y="3.400" width="2.800" height="1.600" rx="0.400" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.300" y="1.600" width="1.400" height="1.900" rx="0.200" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

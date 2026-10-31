@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="65.60px" height="74.40px" viewBox="3.800 3.400 16.400 18.600">
+<title>Thermal camera on tripod</title>
+<desc>Infrared (thermal) camera on a tripod, front view: black body, germanium lens and a small screen showing a hot spot</desc>
+<path d="M 12.000,14.400 L 5.600,21.400" fill="none" stroke="#1A1A1A" stroke-width="0.810" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.000,14.400 L 5.600,21.400" fill="none" stroke="#A3ADB4" stroke-width="0.450" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.000,14.400 L 12.000,21.400" fill="none" stroke="#1A1A1A" stroke-width="0.810" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.000,14.400 L 12.000,21.400" fill="none" stroke="#A3ADB4" stroke-width="0.450" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.000,14.400 L 18.400,21.400" fill="none" stroke="#1A1A1A" stroke-width="0.810" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.000,14.400 L 18.400,21.400" fill="none" stroke="#A3ADB4" stroke-width="0.450" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10.800" y="12.600" width="2.400" height="2.200" rx="0.300" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.400" y="4.000" width="15.200" height="8.800" rx="1.400" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="9.200" cy="8.400" r="3.200" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="9.200" cy="8.400" r="2.100" fill="#4A2C6E" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="8.500" cy="7.700" r="0.600" fill="#FFFFFF" stroke="none" fill-opacity="0.5"/>
+<rect x="13.600" y="5.600" width="4.600" height="5.600" rx="0.300" fill="#3B2A73" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="15.900" cy="8.600" rx="1.600" ry="1.900" fill="#E07B39" stroke="none"/>
+<ellipse cx="15.900" cy="8.800" rx="0.800" ry="1.000" fill="#F2B33D" stroke="none"/>
+</svg>

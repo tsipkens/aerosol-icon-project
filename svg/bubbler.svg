@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="52.80px" height="79.20px" viewBox="5.800 2.200 13.200 19.800">
+<title>Bubbler (gas-washing bottle)</title>
+<desc>Gas-washing bottle used as a bubbler or humidifier: glass bottle with water, dip tube with frit and rising bubbles, head with an outlet port</desc>
+<rect x="6.400" y="9.000" width="11.200" height="12.400" rx="1.800" fill="#E6F2FA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.800" y="12.800" width="10.400" height="8.200" rx="1.400" fill="#9FD0F0" stroke="none"/>
+<path d="M 7.000,12.800 L 17.000,12.800" fill="none" stroke="#2F6DB5" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="11.200" cy="17.000" r="0.500" fill="#FFFFFF" stroke="#2F6DB5" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="12.000" cy="15.200" r="0.400" fill="#FFFFFF" stroke="#2F6DB5" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.800" cy="14.000" r="0.350" fill="#FFFFFF" stroke="#2F6DB5" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="12.600" cy="13.400" r="0.300" fill="#FFFFFF" stroke="#2F6DB5" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="6.400" y="9.000" width="11.200" height="12.400" rx="1.800" fill="none" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.000" y="6.400" width="6.000" height="2.800" rx="0.500" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10.200" y="2.800" width="1.200" height="16.600" rx="0.300" fill="#E6F2FA" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10.800" cy="19.000" r="0.900" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="15.000" y="7.200" width="3.400" height="1.200" rx="0.300" fill="#E6F2FA" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

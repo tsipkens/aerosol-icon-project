@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="86.40px" height="74.40px" viewBox="1.200 2.600 21.600 18.600">
+<title>Gas sampling bag (Tedlar type)</title>
+<desc>Gas sampling bag: translucent film pillow with sealed seams and a polypropylene valve fitting at the top</desc>
+<path d="M 3.200,7.600 Q 12.000,6.200 20.800,7.600 Q 22.200,13.400 20.800,19.200 Q 12.000,20.600 3.200,19.200 Q 1.800,13.400 3.200,7.600 Z" fill="#EDE5CC" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round" fill-opacity="0.9"/>
+<path d="M 4.400,8.800 Q 12.000,7.600 19.600,8.800 Q 20.800,13.400 19.600,18.000 Q 12.000,19.200 4.400,18.000 Q 3.200,13.400 4.400,8.800 Z" fill="none" stroke="#A3ADB4" stroke-width="0.135" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="0.5,0.35"/>
+<path d="M 6.000,10.600 Q 9.000,9.600 12.400,10.000" fill="none" stroke="#FFFFFF" stroke-width="0.450" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10.400" y="5.200" width="3.200" height="2.600" rx="0.400" fill="#3C9A5F" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.200" y="3.200" width="1.600" height="2.100" rx="0.300" fill="#76B88F" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

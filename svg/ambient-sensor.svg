@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="55.20px" height="76.80px" viewBox="6.600 3.000 13.800 19.200">
+<title>Ambient T, RH and pressure sensor</title>
+<desc>Ambient temperature, humidity and pressure sensor: white louvred radiation shield on a mast with a small logger box</desc>
+<rect x="11.400" y="13.800" width="1.200" height="7.600" rx="0.300" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8.600" y="21.000" width="6.800" height="0.600" rx="0.200" fill="#3E464C" stroke="none"/>
+<rect x="7.200" y="3.600" width="9.600" height="1.300" rx="0.600" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.300" y="5.600" width="9.400" height="1.300" rx="0.600" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.400" y="7.600" width="9.200" height="1.300" rx="0.600" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.500" y="9.600" width="9.000" height="1.300" rx="0.600" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.600" y="11.600" width="8.800" height="1.300" rx="0.600" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10.600" y="13.400" width="2.800" height="0.800" rx="0.200" fill="#A3ADB4" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="13.400" y="15.000" width="6.400" height="5.000" rx="0.600" fill="#E3E7EA" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="14.200" y="15.800" width="4.800" height="2.200" rx="0.200" fill="#C9D8B8" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="15.000" cy="19.000" r="0.300" fill="#5CC08A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="14.910" cy="18.910" r="0.090" fill="#FFFFFF" stroke="none" fill-opacity="0.7"/>
+<rect x="12.600" y="16.400" width="0.800" height="1.000" rx="0.100" fill="#A3ADB4" stroke="none"/>
+</svg>

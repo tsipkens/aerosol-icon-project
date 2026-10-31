@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="72.80px" height="75.20px" viewBox="4.400 2.800 18.200 18.800">
+<title>Turbomolecular pump</title>
+<desc>Turbomolecular vacuum pump: inlet flange at the top, cut-away of the rotor and stator blade stack, electronics drive at the base with status light</desc>
+<rect x="5.000" y="3.400" width="14.000" height="2.000" rx="0.400" fill="#B8C0C6" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.000" y="5.400" width="10.000" height="10.600" rx="0.800" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8.400" y="6.400" width="7.200" height="8.600" rx="0.300" fill="#DDE3E7" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.800,7.900 L 10.000,7.000" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.550,7.900 L 11.750,7.000" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.300,7.900 L 13.500,7.000" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.050,7.900 L 15.250,7.000" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.800,8.350 L 10.000,9.250" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.550,8.350 L 11.750,9.250" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.300,8.350 L 13.500,9.250" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.050,8.350 L 15.250,9.250" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.800,10.600 L 10.000,9.700" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.550,10.600 L 11.750,9.700" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.300,10.600 L 13.500,9.700" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.050,10.600 L 15.250,9.700" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.800,11.050 L 10.000,11.950" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.550,11.050 L 11.750,11.950" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.300,11.050 L 13.500,11.950" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.050,11.050 L 15.250,11.950" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.800,13.300 L 10.000,12.400" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.550,13.300 L 11.750,12.400" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.300,13.300 L 13.500,12.400" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.050,13.300 L 15.250,12.400" fill="none" stroke="#3E464C" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 8.800,13.750 L 10.000,14.650" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.550,13.750 L 11.750,14.650" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.300,13.750 L 13.500,14.650" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.050,13.750 L 15.250,14.650" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="11.600" y="6.400" width="0.800" height="8.600" rx="0.100" fill="#A3ADB4" stroke="none"/>
+<rect x="7.600" y="16.000" width="8.800" height="4.400" rx="0.600" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="9.200" cy="18.200" r="0.350" fill="#5CC08A" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="9.095" cy="18.095" r="0.105" fill="#FFFFFF" stroke="none" fill-opacity="0.7"/>
+<rect x="17.000" y="11.500" width="1.600" height="1.000" rx="0.150" fill="#C9D0D5" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 16.400,18.200 C 19.400,18.200 19.400,21.000 22.000,21.000" fill="none" stroke="#3E464C" stroke-width="0.540" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

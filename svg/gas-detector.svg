@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48.00px" height="76.80px" viewBox="6.400 2.800 12.000 19.200">
+<title>Portable gas detector</title>
+<desc>Hand-held multi-gas detector (CO, O2, H2S, LEL): yellow rugged case with black boot, sensor grille on top, display, one button and two alarm lights</desc>
+<rect x="7.000" y="4.600" width="10.000" height="16.800" rx="2.000" fill="#F2B33D" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="7.000" y="14.600" width="10.000" height="6.800" rx="1.600" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="9.000" y="3.400" width="6.000" height="1.800" rx="0.500" fill="#22262A" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 10.000,3.800 L 10.000,4.800" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 11.300,3.800 L 11.300,4.800" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 12.700,3.800 L 12.700,4.800" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 14.000,3.800 L 14.000,4.800" fill="none" stroke="#A3ADB4" stroke-width="0.180" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="8.500" cy="6.000" r="0.450" fill="#E5484D" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="8.365" cy="5.865" r="0.135" fill="#FFFFFF" stroke="none" fill-opacity="0.7"/>
+<circle cx="15.500" cy="6.000" r="0.450" fill="#E5484D" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="15.365" cy="5.865" r="0.135" fill="#FFFFFF" stroke="none" fill-opacity="0.7"/>
+<rect x="8.600" y="7.400" width="6.800" height="4.800" rx="0.400" fill="#C9D8B8" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8.850" y="7.650" width="6.300" height="0.500" rx="0.100" fill="#D6E2CA" stroke="none"/>
+<path d="M 9.824,9.000 L 13.496,9.000" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 9.824,10.600 L 12.000,10.600" fill="none" stroke="#3E464C" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="12.000" cy="17.000" r="1.300" fill="#3A3E42" stroke="#1A1A1A" stroke-width="0.315" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16.600" y="9.000" width="1.200" height="6.000" rx="0.400" fill="#3E464C" stroke="#1A1A1A" stroke-width="0.225" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
