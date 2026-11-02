@@ -14,6 +14,7 @@ A public icon pack for a range of common aerosol-related devices, provided as SV
 <a href="svg/aethalometer-0.svg"><img src="svg/aethalometer-0.svg" width="96" height="96" alt="Aethalometer 0" title="aethalometer-0" /></a>
 <a href="svg/aethalometer.svg"><img src="svg/aethalometer.svg" width="96" height="96" alt="Aethalometer" title="aethalometer" /></a>
 <a href="svg/apm.svg"><img src="svg/apm.svg" width="96" height="96" alt="Apm" title="apm" /></a>
+<a href="svg/aps.svg"><img src="svg/aps.svg" width="96" height="96" alt="Aps" title="aps" /></a>
 <a href="svg/caps.svg"><img src="svg/caps.svg" width="96" height="96" alt="Caps" title="caps" /></a>
 <a href="svg/catalytic-stripper.svg"><img src="svg/catalytic-stripper.svg" width="96" height="96" alt="Catalytic Stripper" title="catalytic-stripper" /></a>
 <a href="svg/co2-analyzer.svg"><img src="svg/co2-analyzer.svg" width="96" height="96" alt="Co2 Analyzer" title="co2-analyzer" /></a>
@@ -24,6 +25,7 @@ A public icon pack for a range of common aerosol-related devices, provided as SV
 <a href="svg/diluter-di-1000.svg"><img src="svg/diluter-di-1000.svg" width="96" height="96" alt="Diluter Di 1000" title="diluter-di-1000" /></a>
 <a href="svg/dma-2.svg"><img src="svg/dma-2.svg" width="96" height="96" alt="Dma 2" title="dma-2" /></a>
 <a href="svg/dma.svg"><img src="svg/dma.svg" width="96" height="96" alt="Dma" title="dma" /></a>
+<a href="svg/drx-hand.svg"><img src="svg/drx-hand.svg" width="96" height="96" alt="Drx Hand" title="drx-hand" /></a>
 <a href="svg/drx.svg"><img src="svg/drx.svg" width="96" height="96" alt="Drx" title="drx" /></a>
 <a href="svg/dryer-2.svg"><img src="svg/dryer-2.svg" width="96" height="96" alt="Dryer 2" title="dryer-2" /></a>
 <a href="svg/dryer-3.svg"><img src="svg/dryer-3.svg" width="96" height="96" alt="Dryer 3" title="dryer-3" /></a>
