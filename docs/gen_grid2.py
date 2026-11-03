@@ -72,16 +72,18 @@ def update_readme_with_svg_table(
         svg_file = svg_files[i]
         
         # Define output path for the labeled SVG
+        link_file = svg_dir / svg_file.name
         output_file = output_dir / svg_file.name
         
         # Generate and save the labeled SVG copy
         create_labeled_svg(svg_file, output_file)
 
         rel_path = output_file.as_posix()
+        link_path = link_file.as_posix()
         name = svg_file.stem.replace("-", " ").replace("_", " ").title()
 
         cell = (
-            f'<a href="{rel_path}">'
+            f'<a href="{link_path}">'
             f'<img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" title="{svg_file.stem}" />'
             f"</a>"
         )
