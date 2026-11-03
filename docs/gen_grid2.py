@@ -19,6 +19,11 @@ def create_labeled_svg(svg_path: Path, output_path: Path):
             # Update viewBox with the expanded height
             new_vb = f'viewBox="{min_x} {min_y} {w} {new_h}"'
             content = content.replace(vb_match.group(0), new_vb)
+            
+            if len(name) > 15:
+                name_label = name[0:12] + "..." + name[-1]
+            else:
+                name_label = name
 
             # Create the SVG text element centered at the bottom
             text_x = min_x + (w / 2)
@@ -26,7 +31,7 @@ def create_labeled_svg(svg_path: Path, output_path: Path):
             text_tag = (
                 f'<text x="{text_x}" y="{text_y}" text-anchor="middle" '
                 f'font-family="-apple-system, BlinkMacSystemFont, sans-serif" '
-                f'font-size="12" fill="#666666" data-labeled="true">{name}</text>\n'
+                f'font-size="14" fill="#666666" data-labeled="true">{name_label}</text>\n'
             )
             
             # Insert the text tag right before the closing </svg> tag
