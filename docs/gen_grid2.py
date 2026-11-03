@@ -31,9 +31,9 @@ def update_readme_with_svg_grid(
         item = (
             f'  <div style="display: inline-block; text-align: center; width: 110px; margin: 12px; vertical-align: top;">\n'
             f'    <a href="{rel_path}">\n'
-            f'      <img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" />\n'
+            f'      <img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" /><br />\n'
             f'    </a>\n'
-            f'    <sub style="display:block;margin-top:4px;font-size:8px;">{name.upper()}</sub>\n'
+            f'    <sub style="font-size:8px;">{name.upper()}</sub>\n'
             f'  </div>'
         )
         html_lines.append(item)
