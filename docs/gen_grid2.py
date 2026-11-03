@@ -2,13 +2,50 @@ import re
 from pathlib import Path
 
 
-def update_readme_with_svg_grid(
-    svg_folder: str = "./icons",
+def create_labeled_svg(svg_path: Path, output_path: Path):
+    """Reads an original SVG, appends a text label at the bottom, and saves to an output path."""
+    content = svg_path.read_text(encoding="utf-8")
+    name = svg_path.stem.replace("-", " ").replace("_", " ").title().upper()
+
+    # Find and parse the viewBox attribute
+    vb_match = re.search(r'viewBox=["\']([\d\.\s,-]+)["\']', content)
+    if vb_match:
+        vb_vals = [float(v) for v in vb_match.group(1).replace(',', ' ').split()]
+        if len(vb_vals) == 4:
+            min_x, min_y, w, h = vb_vals
+            extra_h = 22  # Extra canvas height allocated for the text label
+            new_h = h + extra_h
+            
+            # Update viewBox with the expanded height
+            new_vb = f'viewBox="{min_x} {min_y} {w} {new_h}"'
+            content = content.replace(vb_match.group(0), new_vb)
+
+            # Create the SVG text element centered at the bottom
+            text_x = min_x + (w / 2)
+            text_y = min_y + h + 15
+            text_tag = (
+                f'<text x="{text_x}" y="{text_y}" text-anchor="middle" '
+                f'font-family="-apple-system, BlinkMacSystemFont, sans-serif" '
+                f'font-size="9" fill="#555555" data-labeled="true">{name}</text>\n'
+            )
+            
+            # Insert the text tag right before the closing </svg> tag
+            content = re.sub(r'</\s*svg\s*>', text_tag + '</svg>', content, flags=re.IGNORECASE)
+
+    # Save to the designated output folder
+    output_path.write_text(content, encoding="utf-8")
+
+
+def update_readme_with_svg_table(
+    svg_folder: str = "./svg",
+    output_folder: str = "docs//grid_svg",
     readme_path: str = "README.md",
+    columns: int = 4,
     icon_size: int = 96,
 ):
-    """Generates a minimalist, fluid inline-block grid with SVGs and text labels."""
+    """Generates labeled SVGs in an output folder and updates README.md with an HTML table."""
     svg_dir = Path(svg_folder)
+    output_dir = Path(output_folder)
     readme = Path(readme_path)
 
     if not svg_dir.is_dir():
@@ -20,23 +57,30 @@ def update_readme_with_svg_grid(
         print(f"No SVG files found in '{svg_folder}'.")
         return
 
-    # 1. Build minimalist layout using fluid inline-blocks
-    html_lines = ["<!-- SVG_GRID_START -->", '<p align="center">']
+    # Ensure the output directory exists
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    for svg_file in svg_files:
-        rel_path = svg_file.as_posix()
+    # 1. Build HTML Table without <thead> or <th> using the new labeled files
+    html_lines = ["<!-- SVG_GRID_START -->", '<p align="left">']
+
+    for i in range(0, len(svg_files)):
+        svg_file = svg_files[i]
+        
+        # Define output path for the labeled SVG
+        output_file = output_dir / svg_file.name
+        
+        # Generate and save the labeled SVG copy
+        create_labeled_svg(svg_file, output_file)
+
+        rel_path = output_file.as_posix()
         name = svg_file.stem.replace("-", " ").replace("_", " ").title()
 
-        # Modern minimalist card wrapper
-        item = (
-            f'  <div style="display: inline-block; text-align: center; width: 110px; margin: 12px; vertical-align: top;">\n'
-            f'    <a href="{rel_path}">\n'
-            f'      <img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" /><br />\n'
-            f'    </a>\n'
-            f'    <sub style="font-size:8px;">{name.upper()}</sub>\n'
-            f'  </div>'
+        cell = (
+            f'<a href="{rel_path}">'
+            f'<img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" title="{svg_file.stem}" />'
+            f"</a>"
         )
-        html_lines.append(item)
+        html_lines.append(cell)
 
     html_lines.append("</p>")
     html_lines.append("<!-- SVG_GRID_END -->")
@@ -60,13 +104,15 @@ def update_readme_with_svg_grid(
     # 4. Save to README.md
     readme.write_text(updated_content, encoding="utf-8")
     print(
-        f"Successfully updated '{readme_path}' with minimalist SVG layout ({len(svg_files)} icons)!"
+        f"Successfully generated {len(svg_files)} labeled SVGs in '{output_folder}' and updated '{readme_path}'!"
     )
 
 
 if __name__ == "__main__":
-    update_readme_with_svg_grid(
-        svg_folder="./svg",  # Path to your SVG folder
+    update_readme_with_svg_table(
+        svg_folder="./svg",  # Path to your source SVG folder
+        output_folder="docs//grid_svg",  # Path where labeled copies will be saved
         readme_path="./README.md",  # Path to your README file
-        icon_size=96,  # Smaller, cleaner icon preview size
+        columns=4,  # Number of table columns
+        icon_size=96,  # Preview size in pixels
     )
