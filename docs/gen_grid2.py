@@ -26,7 +26,7 @@ def create_labeled_svg(svg_path: Path, output_path: Path):
             text_tag = (
                 f'<text x="{text_x}" y="{text_y}" text-anchor="middle" '
                 f'font-family="-apple-system, BlinkMacSystemFont, sans-serif" '
-                f'font-size="9" fill="#555555" data-labeled="true">{name}</text>\n'
+                f'font-size="12" fill="#666666" data-labeled="true">{name}</text>\n'
             )
             
             # Insert the text tag right before the closing </svg> tag
