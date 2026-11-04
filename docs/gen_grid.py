@@ -33,7 +33,6 @@ def update_readme_with_svg_table(
         cell = (
             f'<a href="{rel_path}">'
             f'<img src="{rel_path}" width="{icon_size}" height="{icon_size}" alt="{name}" title="{svg_file.stem}" />'
-            # f"        <sub><b>{name}</b></sub>\n"
             f"</a>"
         )
         html_lines.append(cell)
