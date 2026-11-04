@@ -51,6 +51,7 @@ A public icon pack for a range of common aerosol-related devices, provided as SV
 <a href="svg/minicast-1.svg"><img src="docs/grid_svg/minicast-1.svg" width="96" height="96" alt="Minicast 1" title="minicast-1" /></a>
 <a href="svg/minicast.svg"><img src="docs/grid_svg/minicast.svg" width="96" height="96" alt="Minicast" title="minicast" /></a>
 <a href="svg/misg.svg"><img src="docs/grid_svg/misg.svg" width="96" height="96" alt="Misg" title="misg" /></a>
+<a href="svg/moudi.svg"><img src="docs/grid_svg/moudi.svg" width="96" height="96" alt="Moudi" title="moudi" /></a>
 <a href="svg/mss.svg"><img src="docs/grid_svg/mss.svg" width="96" height="96" alt="Mss" title="mss" /></a>
 <a href="svg/nano-dma.svg"><img src="docs/grid_svg/nano-dma.svg" width="96" height="96" alt="Nano Dma" title="nano-dma" /></a>
 <a href="svg/nebulizer-2.svg"><img src="docs/grid_svg/nebulizer-2.svg" width="96" height="96" alt="Nebulizer 2" title="nebulizer-2" /></a>
