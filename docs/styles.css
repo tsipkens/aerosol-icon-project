@@ -323,7 +323,7 @@ main {
   background: none;
   min-width: 0;
   content-visibility: auto;
-  contain-intrinsic-size: 96px 96px;
+  contain-intrinsic-size: 130px 130px;
   transition: background 0.12s;
 }
 

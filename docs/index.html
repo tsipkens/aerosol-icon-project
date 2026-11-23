@@ -22,16 +22,11 @@
         <button class="btn icon" id="theme" title="Toggle theme" aria-label="Toggle theme">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
         </button>
-        <!-- <button class="btn" id="open" title="Load a folder of SVGs">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
-          <span class="txt">Open folder</span>
-        </button> -->
       </div>
     </div>
     <div class="search" id="searchBox">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
       <input id="q" placeholder="Search icons" autocomplete="off" spellcheck="false" aria-label="Search icons">
-      <!-- <kbd></kbd> -->
       <button class="clear" id="clear" aria-label="Clear search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div class="chips" id="chips" role="group" aria-label="Categories"></div>
@@ -46,9 +41,9 @@
     <button class="btn" id="emptyClear">Clear filters</button>
   </div>
   <div class="drop" id="drop" hidden>
-    <h2 id="dropTitle">No icons yet</h2>
-    <p id="dropText">Drop a folder of SVG files here, or choose one from your computer.</p>
-    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button class="btn primary" id="open2">Choose folder</button><button class="btn" id="reconnect" hidden></button></div>
+    <h2 id="dropTitle">Loading icons…</h2>
+    <p id="dropText"></p>
+    <button class="btn primary" id="choose" hidden>Choose folder</button>
   </div>
 </main>
 
@@ -75,6 +70,7 @@
 <input type="file" id="picker" webkitdirectory multiple hidden>
 
 <script>
+
 
 /* ---------- svg normalising ---------- */
 const NS = 'http://www.w3.org/2000/svg';
@@ -265,19 +261,88 @@ $('theme').onclick = () => {
 if (store.get('ig-theme')) root.dataset.theme = store.get('ig-theme');
 if (store.get('ig-size')) setSize(store.get('ig-size'));
 
-/* ---------- load a folder in the browser ---------- */
+/* ---------- icon sources ----------
+   Tried in order: 1) GitHub repo  2) local folder next to this page  3) folder picker / drag-and-drop */
+const GITHUB = { owner: 'tsipkens', repo: 'aerosol-icon-project', branch: 'main', path: 'svg' };
+const LOCAL_DIR = 'raw/';
+const MAX_DEPTH = 4;
+
+// Each source returns a list of { n: name, c: category, url } for fetchAll().
+async function githubRefs() {
+  const { owner, repo, branch, path } = GITHUB;
+  const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/trees/${encodeURIComponent(branch)}?recursive=1`);
+  if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+  const data = await res.json();
+  if (data.truncated) console.warn('[icons] GitHub tree was truncated; some icons may be missing');
+  const prefix = path ? path.replace(/^\/|\/$/g, '') + '/' : '';
+  return (data.tree || [])
+    .filter(n => n.type === 'blob' && /\.svg$/i.test(n.path) && n.path.startsWith(prefix))
+    .map(n => {
+      const parts = n.path.slice(prefix.length).split('/');
+      return {
+        n: parts.at(-1).replace(/\.svg$/i, ''),
+        c: parts.length > 1 ? parts[0] : '',
+        url: `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/${n.path.split('/').map(encodeURIComponent).join('/')}`
+      };
+    });
+}
+
+// Reads the web server's directory listing (python -m http.server, nginx autoindex, Apache, …).
+async function localRefs(dirUrl = LOCAL_DIR, depth = 0, cat = '') {
+  const res = await fetch(dirUrl, { cache: 'no-cache' });
+  if (!res.ok || !(res.headers.get('content-type') || '').includes('html')) throw new Error('no directory listing');
+  const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+  const base = new URL(dirUrl, location.href), seen = new Set(), out = [];
+  for (const a of doc.querySelectorAll('a[href]')) {
+    const href = a.getAttribute('href');
+    if (/^(\?|#|\.\.)/.test(href)) continue;
+    let u; try { u = new URL(href, base); } catch { continue; }
+    if (u.origin !== base.origin || !u.pathname.startsWith(base.pathname) || u.pathname === base.pathname || seen.has(u.pathname)) continue;
+    seen.add(u.pathname);
+    const rel = decodeURIComponent(u.pathname.slice(base.pathname.length));
+    if (u.pathname.endsWith('/')) {
+      if (depth < MAX_DEPTH) out.push(...await localRefs(u.href, depth + 1, cat || rel.replace(/\/$/, '')));
+    } else if (/\.svg$/i.test(rel)) out.push({ n: rel.replace(/\.svg$/i, ''), c: cat, url: u.href });
+  }
+  return out;
+}
+
+async function fetchAll(refs) {
+  const items = [], queue = [...refs];
+  const worker = async () => {
+    for (let m; (m = queue.shift());) {
+      try { const r = await fetch(m.url); if (r.ok) items.push({ n: m.n, c: m.c, s: await r.text() }); } catch {}
+    }
+  };
+  await Promise.all(Array.from({ length: 12 }, worker));
+  return items;
+}
+
+async function tryLoad(label, getRefs) {
+  try {
+    const refs = await getRefs();
+    if (!refs.length) throw new Error('no SVG files found');
+    const items = await fetchAll(refs);
+    if (!items.length) throw new Error('none of the SVG files could be fetched');
+    console.info(`[icons] ${items.length} icons from ${label}`);
+    return items;
+  } catch (err) {
+    console.warn(`[icons] ${label} unavailable: ${err.message}`);
+    return null;
+  }
+}
+
+/* ---------- folder picker + drag-and-drop (last resort) ---------- */
 const picker = $('picker');
-// $('open').onclick = $('open2').onclick = chooseFolder;
+$('choose').onclick = () => picker.click();
 async function fromFiles(files) {
   const svgs = [...files].filter(f => /\.svg$/i.test(f.name));
   if (!svgs.length) { toast('No SVG files found in that folder'); return; }
   const items = await Promise.all(svgs.map(async f => {
-    const parts = (f.path || f.webkitRelativePath || f.name).split('/').filter(Boolean);
-    const dirs = parts.slice(0, -1); // [root, sub, ...]
+    const dirs = (f.path || f.webkitRelativePath || f.name).split('/').filter(Boolean).slice(0, -1); // [root, sub, …]
     return { n: f.name.replace(/\.svg$/i, ''), c: dirs.length > 1 ? dirs[1] : '', s: await f.text() };
   }));
-  const root0 = (svgs[0].webkitRelativePath || '').split('/')[0];
-  if (root0) $('title').textContent = prettyCat(root0);
+  console.info(`[icons] ${items.length} icons from a local folder`);
   load(items); toast(`Loaded ${ICONS.length} icons`);
 }
 picker.onchange = () => { fromFiles(picker.files); picker.value = ''; };
@@ -303,117 +368,24 @@ addEventListener('drop', async e => {
   e.preventDefault(); depth = 0; document.body.classList.remove('dragging');
   const entries = [...e.dataTransfer.items].map(i => i.webkitGetAsEntry && i.webkitGetAsEntry()).filter(Boolean);
   const files = (await Promise.all(entries.map(en => readEntry(en)))).flat();
-  if (entries.length === 1 && entries[0].isDirectory) $('title').textContent = prettyCat(entries[0].name);
   fromFiles(files.length ? files : e.dataTransfer.files);
 });
 
-/* ---------- find icons on load ---------- */
-const ICON_DIR = 'icons/';
-const MAX_DEPTH = 4;
-
-// 1. Read the web server's directory listing for icons/ (python -m http.server, nginx autoindex, Apache, …)
-async function crawl(dirUrl, depth = 0, cat = '') {
-  const res = await fetch(dirUrl, { cache: 'no-cache' });
-  if (!res.ok || !(res.headers.get('content-type') || '').includes('html')) throw new Error('no directory listing');
-  const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
-  const base = new URL(dirUrl, location.href), seen = new Set(), out = [];
-  for (const a of doc.querySelectorAll('a[href]')) {
-    const href = a.getAttribute('href');
-    if (/^(\?|#|\.\.)/.test(href)) continue;
-    let u; try { u = new URL(href, base); } catch { continue; }
-    if (u.origin !== base.origin || !u.pathname.startsWith(base.pathname) || u.pathname === base.pathname || seen.has(u.pathname)) continue;
-    seen.add(u.pathname);
-    const rel = decodeURIComponent(u.pathname.slice(base.pathname.length));
-    if (u.pathname.endsWith('/')) {
-      if (depth < MAX_DEPTH) out.push(...await crawl(u.href, depth + 1, cat || rel.replace(/\/$/, '')));
-    } else if (/\.svg$/i.test(rel)) out.push({ n: rel.replace(/\.svg$/i, ''), c: cat, url: u.href });
-  }
-  return out;
+/* ---------- boot ---------- */
+function showDrop(title, text, button) {
+  $('dropTitle').textContent = title; $('dropText').textContent = text; $('choose').hidden = !button;
 }
-
-// 2. Optional fallback for hosts with no directory listing: an icons.json you write yourself,
-//    either ["icons/a.svg", "icons/sub/b.svg"] or {"icons":[{"name","category","path"}]}
-async function fromManifest() {
-  const res = await fetch('icons.json', { cache: 'no-cache' });
-  if (!res.ok) throw new Error('no manifest');
-  const m = await res.json();
-  const list = Array.isArray(m) ? m : m.icons || [];
-  if (m.title) $('title').textContent = m.title;
-  return list.map(x => {
-    const path = typeof x === 'string' ? x : x.path;
-    const rel = path.replace(/^\.?\/?/, '').replace(new RegExp('^' + ICON_DIR), '').split('/');
-    return { n: (typeof x === 'string' ? rel.at(-1).replace(/\.svg$/i, '') : x.name), c: (typeof x === 'string' ? (rel.length > 1 ? rel[0] : '') : x.category || ''), url: new URL(path.split('/').map(encodeURIComponent).join('/'), location.href).href };
-  });
-}
-
-async function fetchAll(refs) {
-  const items = [], queue = [...refs];
-  const worker = async () => {
-    for (let m; (m = queue.shift());) {
-      try { const r = await fetch(m.url); if (r.ok) items.push({ n: m.n, c: m.c, s: await r.text() }); } catch {}
-    }
-  };
-  await Promise.all(Array.from({ length: 12 }, worker));
-  return items;
-}
-
-/* ---------- pick a folder from your computer (remembered) ---------- */
-const kv = async (mode, fn) => {
-  const db = await new Promise((res, rej) => { const r = indexedDB.open('icon-gallery', 1); r.onupgradeneeded = () => r.result.createObjectStore('kv'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
-  return new Promise((res, rej) => { const tx = db.transaction('kv', mode), out = fn(tx.objectStore('kv')); tx.oncomplete = () => res(out.result); tx.onerror = () => rej(tx.error); });
-};
-async function walkHandle(dir, cat, items) {
-  for await (const [name, e] of dir.entries()) {
-    if (name.startsWith('.')) continue;
-    if (e.kind === 'directory') await walkHandle(e, cat || name, items);
-    else if (/\.svg$/i.test(name)) items.push({ n: name.replace(/\.svg$/i, ''), c: cat, s: await (await e.getFile()).text() });
-  }
-}
-async function loadHandle(h) {
-  const items = [];
-  await walkHandle(h, '', items);
-  if (!items.length) { toast('No SVG files found in that folder'); return; }
-  $('title').textContent = prettyCat(h.name);
-  load(items);
-}
-// async function chooseFolder() {
-//   if (!window.showDirectoryPicker) { picker.click(); return; }
-//   try {
-//     const h = await showDirectoryPicker({ id: 'icon-gallery', mode: 'read' });
-//     try { await kv('readwrite', s => s.put(h, 'dir')); } catch {}
-//     await loadHandle(h);
-//   } catch (e) { if (e.name !== 'AbortError') toast('Couldn’t open that folder'); }
-// }
-
-function showDrop(title, text) { $('dropTitle').textContent = title; $('dropText').textContent = text; }
-
 async function boot() {
-  showDrop('Loading icons…', ' ');
-  $('open2').hidden = true; render();
-  let refs = [];
-  try { refs = await crawl(ICON_DIR); } catch {}
-  if (!refs.length) { try { refs = await fromManifest(); } catch {} }
-  if (refs.length) {
-    const items = await fetchAll(refs);
-    $('open2').hidden = false;
-    if (items.length) { load(items); return; }
-  }
-  // Nothing to list: reuse the folder picked last time, or ask for one.
-  $('open2').hidden = false;
-  showDrop('Choose your icons folder', 'This page can’t list the icons folder on its own. Pick the folder, or drop it here. It’s only read in your browser.');
+  showDrop('Loading icons…', '', false); render();
+  const items =
+    await tryLoad(`GitHub (${GITHUB.owner}/${GITHUB.repo}@${GITHUB.branch}/${GITHUB.path})`, githubRefs) ||
+    await tryLoad(`local folder (${LOCAL_DIR})`, () => localRefs());
+  if (items) { load(items); return; }
+  showDrop('Couldn’t load the icons',
+    'GitHub and the local folder were both unavailable. Choose a folder of SVGs, or drop one here. It’s only read in your browser.', true);
   render();
-  try {
-    const h = await kv('readonly', s => s.get('dir'));
-    if (h) {
-      if (await h.queryPermission({ mode: 'read' }) === 'granted') { await loadHandle(h); return; }
-      const b = $('reconnect');
-      b.textContent = `Reopen “${h.name}”`; b.hidden = false;
-      b.onclick = async () => { if (await h.requestPermission({ mode: 'read' }) === 'granted') loadHandle(h); };
-    }
-  } catch {}
 }
 boot();
 </script>
 </body>
 </html>
-
