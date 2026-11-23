@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Icons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <div class="head">
+      <h1><span id="title">Icons</span><span class="count" id="count"></span></h1>
+      <div class="tools">
+        <label class="size">Size
+          <input type="range" id="size" min="32" max="128" value="96" aria-label="Icon size">
+        </label>
+        <button class="btn icon" id="theme" title="Toggle theme" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+        </button>
+        <!-- <button class="btn" id="open" title="Load a folder of SVGs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
+          <span class="txt">Open folder</span>
+        </button> -->
+      </div>
+    </div>
+    <div class="search" id="searchBox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="q" placeholder="Search icons" autocomplete="off" spellcheck="false" aria-label="Search icons">
+      <!-- <kbd></kbd> -->
+      <button class="clear" id="clear" aria-label="Clear search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Categories"></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid" role="listbox" aria-label="Icons"></div>
+  <div class="empty" id="empty" hidden>
+    <h2 id="emptyTitle"></h2>
+    <p>Try a shorter word, or pick another category.</p>
+    <button class="btn" id="emptyClear">Clear filters</button>
+  </div>
+  <div class="drop" id="drop" hidden>
+    <h2 id="dropTitle">No icons yet</h2>
+    <p id="dropText">Drop a folder of SVG files here, or choose one from your computer.</p>
+    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button class="btn primary" id="open2">Choose folder</button><button class="btn" id="reconnect" hidden></button></div>
+  </div>
+</main>
+
+<aside class="panel" id="panel" aria-hidden="true" aria-label="Icon details">
+  <header>
+    <h2 id="pName"></h2>
+    <button class="btn icon" id="prev" aria-label="Previous icon" title="Previous (←)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button>
+    <button class="btn icon" id="next" aria-label="Next icon" title="Next (→)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button>
+    <button class="btn icon" id="close" aria-label="Close" title="Close (Esc)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </header>
+  <div class="cat" id="pCat"></div>
+  <div class="stage" id="pStage"></div>
+  <div class="sizes" id="pSizes"></div>
+  <div class="actions">
+    <button class="btn primary wide" id="copySvg">Copy SVG</button>
+    <button class="btn" id="copyJsx">Copy JSX</button>
+    <button class="btn" id="copyName">Copy name</button>
+    <button class="btn wide" id="download">Download .svg</button>
+  </div>
+  <pre id="pCode"></pre>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="picker" webkitdirectory multiple hidden>
+
+<script>
+
+/* ---------- svg normalising ---------- */
+const NS = 'http://www.w3.org/2000/svg';
+function normalize(text) {
+  const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
+  const svg = doc.documentElement;
+  if (!svg || svg.nodeName.toLowerCase() !== 'svg' || doc.querySelector('parsererror')) return null;
+  svg.querySelectorAll('script,metadata,title,desc,style').forEach(n => n.remove());
+  if (!svg.getAttribute('viewBox')) {
+    const w = parseFloat(svg.getAttribute('width')), h = parseFloat(svg.getAttribute('height'));
+    if (w && h) svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+  }
+  svg.removeAttribute('width'); svg.removeAttribute('height');
+  svg.removeAttribute('class'); svg.removeAttribute('style');
+  // Single-color icons inherit currentColor so they adapt to light/dark themes; multi-color icons keep theirs.
+  const els = [svg, ...svg.querySelectorAll('*')];
+  const colors = new Set();
+  els.forEach(el => ['fill', 'stroke'].forEach(a => {
+    const v = el.getAttribute(a);
+    if (v && !/^(none|currentcolor|url\()/i.test(v.trim())) colors.add(v.trim().toLowerCase());
+  }));
+  if (colors.size <= 1) els.forEach(el => ['fill', 'stroke'].forEach(a => {
+    const v = el.getAttribute(a);
+    if (v && !/^(none|currentcolor|url\()/i.test(v.trim())) el.setAttribute(a, 'currentColor');
+  }));
+  if (!svg.getAttribute('xmlns')) svg.setAttribute('xmlns', NS);
+  const ser = new XMLSerializer();
+  const open = ser.serializeToString(svg.cloneNode(false)).replace(/\s*\/>$/, '>');
+  const kids = [...svg.children].map(c => '  ' + ser.serializeToString(c).replace(/ xmlns="[^"]*"/g, ''));
+  return [open, ...kids, '</svg>'].join('\n');
+}
+const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const prettyCat = c => c.replace(/[-_]+/g, ' ').replace(/^./, m => m.toUpperCase());
+
+/* ---------- state ---------- */
+let ICONS = [], list = [], category = 'all', selected = -1;
+const $ = id => document.getElementById(id);
+const grid = $('grid'), q = $('q');
+
+function load(items) {
+  ICONS = items.map(i => {
+    const svg = normalize(i.s);
+    if (!svg) return null;
+    const terms = (i.n + ' ' + i.c).toLowerCase();
+    return { name: i.n, cat: i.c, svg, terms, words: i.n.toLowerCase().split(/[\s\-_.]+/) };
+  }).filter(Boolean).sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
+  category = 'all'; q.value = ''; closePanel(); buildChips(); render();
+}
+
+function buildChips() {
+  const counts = new Map();
+  ICONS.forEach(i => i.cat && counts.set(i.cat, (counts.get(i.cat) || 0) + 1));
+  const box = $('chips');
+  if (counts.size < 2) { box.innerHTML = ''; box.hidden = true; return; }
+  box.hidden = false;
+  const mk = (key, label, n) => `<button class="chip" data-cat="${esc(key)}" aria-pressed="${key === category}">${esc(label)}<small>${n}</small></button>`;
+  box.innerHTML = mk('all', 'All', ICONS.length) +
+    [...counts].sort((a, b) => a[0].localeCompare(b[0])).map(([c, n]) => mk(c, prettyCat(c), n)).join('');
+}
+
+function score(ic, tokens, whole) {
+  let s = 0;
+  if (ic.name.toLowerCase() === whole) s += 100;
+  for (const t of tokens) {
+    if (ic.words.includes(t)) s += 10;
+    else if (ic.words.some(w => w.startsWith(t))) s += 6;
+    else if (ic.terms.includes(t)) s += 2;
+    else return -1;
+  }
+  return s;
+}
+
+function highlight(name, tokens) {
+  if (!tokens.length) return esc(name);
+  const lower = name.toLowerCase(), marks = new Array(name.length).fill(false);
+  tokens.forEach(t => { let i = lower.indexOf(t); if (i > -1) for (let k = i; k < i + t.length; k++) marks[k] = true; });
+  let out = '', open = false;
+  for (let i = 0; i < name.length; i++) {
+    if (marks[i] && !open) { out += '<mark>'; open = true; }
+    if (!marks[i] && open) { out += '</mark>'; open = false; }
+    out += esc(name[i]);
+  }
+  return out + (open ? '</mark>' : '');
+}
+
+function render() {
+  const whole = q.value.trim().toLowerCase();
+  const tokens = whole.split(/\s+/).filter(Boolean);
+  $('searchBox').classList.toggle('has-text', !!whole);
+  let pool = category === 'all' ? ICONS : ICONS.filter(i => i.cat === category);
+  if (tokens.length) {
+    list = pool.map(ic => [ic, score(ic, tokens, whole)]).filter(x => x[1] >= 0)
+      .sort((a, b) => b[1] - a[1] || a[0].name.localeCompare(b[0].name)).map(x => x[0]);
+  } else list = pool;
+
+  const none = !ICONS.length;
+  $('drop').hidden = !none;
+  $('empty').hidden = none || list.length > 0;
+  $('chips').hidden = none || $('chips').children.length === 0;
+  document.querySelector('.search').hidden = none;
+  $('emptyTitle').textContent = whole ? `No icons match “${q.value.trim()}”` : 'No icons in this category';
+  $('count').textContent = none ? '' : (list.length === ICONS.length ? `${ICONS.length} icons` : `${list.length} of ${ICONS.length} icons`);
+
+  grid.innerHTML = list.map((ic, i) =>
+    `<button class="cell" role="option" data-i="${i}" aria-selected="false" title="${esc(ic.name)}"><span class="glyph">${ic.svg}</span><span class="label">${highlight(ic.name, tokens)}</span></button>`
+  ).join('');
+  chipsSync();
+  selected = -1;
+  if ($('panel').classList.contains('open')) closePanel();
+}
+function chipsSync() {
+  document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.cat === category));
+}
+
+/* ---------- panel ---------- */
+const panel = $('panel');
+function jsx(svg) {
+  return svg.replace(/ (class|stroke-width|stroke-linecap|stroke-linejoin|stroke-miterlimit|stroke-opacity|fill-rule|fill-opacity|clip-rule|clip-path|stop-color|stop-opacity)=/g,
+    (_, a) => ' ' + (a === 'class' ? 'className' : a.replace(/-(\w)/g, (_, c) => c.toUpperCase())) + '=')
+    .replace(/<svg /, '<svg {...props} ');
+}
+function openPanel(i) {
+  const ic = list[i]; if (!ic) return;
+  selected = i;
+  grid.querySelectorAll('.cell[aria-selected="true"]').forEach(c => c.setAttribute('aria-selected', 'false'));
+  const cell = grid.children[i]; cell.setAttribute('aria-selected', 'true');
+  cell.scrollIntoView({ block: 'nearest' });
+  $('pName').textContent = ic.name;
+  $('pCat').textContent = ic.cat ? prettyCat(ic.cat) : '';
+  $('pStage').innerHTML = ic.svg;
+  $('pSizes').innerHTML = [24, 32, 48, 72].map(s =>
+    `<figure><span style="display:block;width:${s}px;height:${s}px">${ic.svg.replace('<svg ', `<svg width="${s}" height="${s}" `)}</span><figcaption>${s}</figcaption></figure>`).join('');
+  $('pCode').textContent = ic.svg;
+  panel.classList.add('open'); panel.setAttribute('aria-hidden', 'false');
+}
+function closePanel() {
+  panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true');
+  grid.querySelectorAll('.cell[aria-selected="true"]').forEach(c => c.setAttribute('aria-selected', 'false'));
+}
+function step(d) {
+  if (!list.length) return;
+  openPanel((selected + d + list.length) % list.length);
+}
+let toastTimer;
+function toast(msg) {
+  const t = $('toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 1600);
+}
+async function copy(text, msg) {
+  try { await navigator.clipboard.writeText(text); }
+  catch { const a = document.createElement('textarea'); a.value = text; document.body.append(a); a.select(); document.execCommand('copy'); a.remove(); }
+  toast(msg);
+}
+const cur = () => list[selected];
+$('copySvg').onclick = () => copy(cur().svg, 'SVG copied');
+$('copyJsx').onclick = () => copy(jsx(cur().svg), 'JSX copied');
+$('copyName').onclick = () => copy(cur().name, 'Name copied');
+$('download').onclick = () => {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([cur().svg], { type: 'image/svg+xml' }));
+  a.download = cur().name + '.svg'; a.click(); URL.revokeObjectURL(a.href);
+};
+$('close').onclick = closePanel; $('prev').onclick = () => step(-1); $('next').onclick = () => step(1);
+
+/* ---------- events ---------- */
+grid.addEventListener('click', e => { const c = e.target.closest('.cell'); if (c) openPanel(+c.dataset.i); });
+$('chips').addEventListener('click', e => { const c = e.target.closest('.chip'); if (c) { category = c.dataset.cat; render(); } });
+let t; q.addEventListener('input', () => { clearTimeout(t); t = setTimeout(render, 60); });
+$('clear').onclick = () => { q.value = ''; render(); q.focus(); };
+$('emptyClear').onclick = () => { q.value = ''; category = 'all'; render(); };
+document.addEventListener('keydown', e => {
+  const typing = /INPUT|TEXTAREA/.test(document.activeElement.tagName);
+  if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+  else if (e.key === 'Escape') { if (panel.classList.contains('open')) closePanel(); else if (document.activeElement === q && q.value) { q.value = ''; render(); } }
+  else if (panel.classList.contains('open') && !typing && e.key === 'ArrowRight') step(1);
+  else if (panel.classList.contains('open') && !typing && e.key === 'ArrowLeft') step(-1);
+});
+
+/* ---------- appearance ---------- */
+const root = document.documentElement;
+const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} } };
+function setSize(v) { root.style.setProperty('--size', v + 'px'); $('size').value = v; store.set('ig-size', v); }
+$('size').oninput = e => setSize(e.target.value);
+$('theme').onclick = () => {
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark'; store.set('ig-theme', root.dataset.theme);
+};
+if (store.get('ig-theme')) root.dataset.theme = store.get('ig-theme');
+if (store.get('ig-size')) setSize(store.get('ig-size'));
+
+/* ---------- load a folder in the browser ---------- */
+const picker = $('picker');
+// $('open').onclick = $('open2').onclick = chooseFolder;
+async function fromFiles(files) {
+  const svgs = [...files].filter(f => /\.svg$/i.test(f.name));
+  if (!svgs.length) { toast('No SVG files found in that folder'); return; }
+  const items = await Promise.all(svgs.map(async f => {
+    const parts = (f.path || f.webkitRelativePath || f.name).split('/').filter(Boolean);
+    const dirs = parts.slice(0, -1); // [root, sub, ...]
+    return { n: f.name.replace(/\.svg$/i, ''), c: dirs.length > 1 ? dirs[1] : '', s: await f.text() };
+  }));
+  const root0 = (svgs[0].webkitRelativePath || '').split('/')[0];
+  if (root0) $('title').textContent = prettyCat(root0);
+  load(items); toast(`Loaded ${ICONS.length} icons`);
+}
+picker.onchange = () => { fromFiles(picker.files); picker.value = ''; };
+function readEntry(entry, path = '') {
+  return new Promise(res => {
+    if (entry.isFile) entry.file(f => { f.path = path + f.name; res([f]); }, () => res([]));
+    else {
+      const reader = entry.createReader(), all = [];
+      (function next() {
+        reader.readEntries(async batch => {
+          if (!batch.length) { res((await Promise.all(all.map(e => readEntry(e, path + entry.name + '/')))).flat()); return; }
+          all.push(...batch); next();
+        }, () => res([]));
+      })();
+    }
+  });
+}
+let depth = 0;
+addEventListener('dragenter', e => { if ([...e.dataTransfer.types].includes('Files')) { depth++; document.body.classList.add('dragging'); } });
+addEventListener('dragleave', () => { if (--depth <= 0) { depth = 0; document.body.classList.remove('dragging'); } });
+addEventListener('dragover', e => e.preventDefault());
+addEventListener('drop', async e => {
+  e.preventDefault(); depth = 0; document.body.classList.remove('dragging');
+  const entries = [...e.dataTransfer.items].map(i => i.webkitGetAsEntry && i.webkitGetAsEntry()).filter(Boolean);
+  const files = (await Promise.all(entries.map(en => readEntry(en)))).flat();
+  if (entries.length === 1 && entries[0].isDirectory) $('title').textContent = prettyCat(entries[0].name);
+  fromFiles(files.length ? files : e.dataTransfer.files);
+});
+
+/* ---------- find icons on load ---------- */
+const ICON_DIR = 'icons/';
+const MAX_DEPTH = 4;
+
+// 1. Read the web server's directory listing for icons/ (python -m http.server, nginx autoindex, Apache, …)
+async function crawl(dirUrl, depth = 0, cat = '') {
+  const res = await fetch(dirUrl, { cache: 'no-cache' });
+  if (!res.ok || !(res.headers.get('content-type') || '').includes('html')) throw new Error('no directory listing');
+  const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+  const base = new URL(dirUrl, location.href), seen = new Set(), out = [];
+  for (const a of doc.querySelectorAll('a[href]')) {
+    const href = a.getAttribute('href');
+    if (/^(\?|#|\.\.)/.test(href)) continue;
+    let u; try { u = new URL(href, base); } catch { continue; }
+    if (u.origin !== base.origin || !u.pathname.startsWith(base.pathname) || u.pathname === base.pathname || seen.has(u.pathname)) continue;
+    seen.add(u.pathname);
+    const rel = decodeURIComponent(u.pathname.slice(base.pathname.length));
+    if (u.pathname.endsWith('/')) {
+      if (depth < MAX_DEPTH) out.push(...await crawl(u.href, depth + 1, cat || rel.replace(/\/$/, '')));
+    } else if (/\.svg$/i.test(rel)) out.push({ n: rel.replace(/\.svg$/i, ''), c: cat, url: u.href });
+  }
+  return out;
+}
+
+// 2. Optional fallback for hosts with no directory listing: an icons.json you write yourself,
+//    either ["icons/a.svg", "icons/sub/b.svg"] or {"icons":[{"name","category","path"}]}
+async function fromManifest() {
+  const res = await fetch('icons.json', { cache: 'no-cache' });
+  if (!res.ok) throw new Error('no manifest');
+  const m = await res.json();
+  const list = Array.isArray(m) ? m : m.icons || [];
+  if (m.title) $('title').textContent = m.title;
+  return list.map(x => {
+    const path = typeof x === 'string' ? x : x.path;
+    const rel = path.replace(/^\.?\/?/, '').replace(new RegExp('^' + ICON_DIR), '').split('/');
+    return { n: (typeof x === 'string' ? rel.at(-1).replace(/\.svg$/i, '') : x.name), c: (typeof x === 'string' ? (rel.length > 1 ? rel[0] : '') : x.category || ''), url: new URL(path.split('/').map(encodeURIComponent).join('/'), location.href).href };
+  });
+}
+
+async function fetchAll(refs) {
+  const items = [], queue = [...refs];
+  const worker = async () => {
+    for (let m; (m = queue.shift());) {
+      try { const r = await fetch(m.url); if (r.ok) items.push({ n: m.n, c: m.c, s: await r.text() }); } catch {}
+    }
+  };
+  await Promise.all(Array.from({ length: 12 }, worker));
+  return items;
+}
+
+/* ---------- pick a folder from your computer (remembered) ---------- */
+const kv = async (mode, fn) => {
+  const db = await new Promise((res, rej) => { const r = indexedDB.open('icon-gallery', 1); r.onupgradeneeded = () => r.result.createObjectStore('kv'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+  return new Promise((res, rej) => { const tx = db.transaction('kv', mode), out = fn(tx.objectStore('kv')); tx.oncomplete = () => res(out.result); tx.onerror = () => rej(tx.error); });
+};
+async function walkHandle(dir, cat, items) {
+  for await (const [name, e] of dir.entries()) {
+    if (name.startsWith('.')) continue;
+    if (e.kind === 'directory') await walkHandle(e, cat || name, items);
+    else if (/\.svg$/i.test(name)) items.push({ n: name.replace(/\.svg$/i, ''), c: cat, s: await (await e.getFile()).text() });
+  }
+}
+async function loadHandle(h) {
+  const items = [];
+  await walkHandle(h, '', items);
+  if (!items.length) { toast('No SVG files found in that folder'); return; }
+  $('title').textContent = prettyCat(h.name);
+  load(items);
+}
+// async function chooseFolder() {
+//   if (!window.showDirectoryPicker) { picker.click(); return; }
+//   try {
+//     const h = await showDirectoryPicker({ id: 'icon-gallery', mode: 'read' });
+//     try { await kv('readwrite', s => s.put(h, 'dir')); } catch {}
+//     await loadHandle(h);
+//   } catch (e) { if (e.name !== 'AbortError') toast('Couldn’t open that folder'); }
+// }
+
+function showDrop(title, text) { $('dropTitle').textContent = title; $('dropText').textContent = text; }
+
+async function boot() {
+  showDrop('Loading icons…', ' ');
+  $('open2').hidden = true; render();
+  let refs = [];
+  try { refs = await crawl(ICON_DIR); } catch {}
+  if (!refs.length) { try { refs = await fromManifest(); } catch {} }
+  if (refs.length) {
+    const items = await fetchAll(refs);
+    $('open2').hidden = false;
+    if (items.length) { load(items); return; }
+  }
+  // Nothing to list: reuse the folder picked last time, or ask for one.
+  $('open2').hidden = false;
+  showDrop('Choose your icons folder', 'This page can’t list the icons folder on its own. Pick the folder, or drop it here. It’s only read in your browser.');
+  render();
+  try {
+    const h = await kv('readonly', s => s.get('dir'));
+    if (h) {
+      if (await h.queryPermission({ mode: 'read' }) === 'granted') { await loadHandle(h); return; }
+      const b = $('reconnect');
+      b.textContent = `Reopen “${h.name}”`; b.hidden = false;
+      b.onclick = async () => { if (await h.requestPermission({ mode: 'read' }) === 'granted') loadHandle(h); };
+    }
+  } catch {}
+}
+boot();
+</script>
+</body>
+</html>
+
