@@ -5,11 +5,11 @@
   --muted: #6b7080;
   --line: #e7e8ed;
   --hover: #f0f1f5;
-  --accent: #2b59ff;
+  --accent: #52B667;
   --accent-ink: #ffffff;
   --dots: #d9dbe3;
-  --size: 28px;
-  --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --size: 72px;
+  --font: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
   color-scheme: light;
 }
@@ -21,7 +21,7 @@
   --muted: #8d92a3;
   --line: #262a33;
   --hover: #1f232b;
-  --accent: #6f8bff;
+  --accent: #B6FF2E;
   --accent-ink: #0c0f14;
   --dots: #2b2f39;
   color-scheme: dark;
@@ -35,7 +35,7 @@
     --muted: #8d92a3;
     --line: #262a33;
     --hover: #1f232b;
-    --accent: #6f8bff;
+    --accent: #B6FF2E;
     --accent-ink: #0c0f14;
     --dots: #2b2f39;
     color-scheme: dark;
@@ -142,7 +142,7 @@ input[type="range"] {
   border: 1px solid var(--line);
   border-radius: 9px;
   background: var(--surface);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 13px;
   transition: background 0.12s, border-color 0.12s;
 }
@@ -279,7 +279,7 @@ input[type="range"] {
   background: none;
   color: var(--muted);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -318,13 +318,12 @@ main {
   justify-content: center;
   gap: 4px;
   padding: 12px;
-  border: 0;
-  /* border-radius: 14px; */
   background: none;
   min-width: 0;
   content-visibility: auto;
   contain-intrinsic-size: 130px 130px;
   transition: background 0.12s;
+  border: 1px solid var(--line);
 }
 
 .cell:hover {
@@ -338,8 +337,7 @@ main {
 
 @supports (corner-shape: squircle) {
   .cell {
-    /* Double the radius to match the visual feel of the fallback */
-    border-radius: 56px;
+    border-radius:486px;
     corner-shape: squircle;
   }
 }
@@ -366,7 +364,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted);
 }
 
@@ -551,7 +549,7 @@ pre {
   color: var(--bg);
   padding: 9px 16px;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 13px;
   opacity: 0;
   pointer-events: none;
