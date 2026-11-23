@@ -7,8 +7,7 @@
 A public icon pack for a range of common aerosol-related devices, provided as SVGs (a subset) or in PPTX (full icon set). Sample icons are shown below.
 
 
-<!-- SVG_GRID_START -->
-<!-- SVG_GRID_END -->
+![Sample SVGs](docs/grid.png)
 
 
 ## Missing icons
