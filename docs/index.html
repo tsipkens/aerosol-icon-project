@@ -17,7 +17,7 @@
       <h1><span id="title">aerosol-icon-project</span><span class="count" id="count"></span></h1>
       <div class="tools">
         <label class="size">Size
-          <input type="range" id="size" min="48" max="128" value="96" aria-label="Icon size">
+          <input type="range" id="size" min="48" max="128" value="128" aria-label="Icon size">
         </label>
         <button class="btn icon" id="theme" title="Toggle theme" aria-label="Toggle theme">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
@@ -41,7 +41,7 @@
     <button class="btn" id="emptyClear">Clear filters</button>
   </div>
   <div class="drop" id="drop" hidden>
-    <h2 id="dropTitle">Loading icons…</h2>
+    <h2 id="dropTitle"></h2>
     <p id="dropText"></p>
     <button class="btn primary" id="choose" hidden>Choose folder</button>
   </div>
@@ -106,11 +106,12 @@ const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&
 const prettyCat = c => c.replace(/[-_]+/g, ' ').replace(/^./, m => m.toUpperCase());
 
 /* ---------- state ---------- */
-let ICONS = [], list = [], category = 'all', selected = -1;
+let ICONS = [], list = [], category = 'all', selected = -1, loading = true;
 const $ = id => document.getElementById(id);
 const grid = $('grid'), q = $('q');
 
 function load(items) {
+  loading = false;
   ICONS = items.map(i => {
     const svg = normalize(i.s);
     if (!svg) return null;
@@ -167,6 +168,15 @@ function render() {
   } else list = pool;
 
   const none = !ICONS.length;
+  grid.setAttribute('aria-busy', String(none && loading));
+  if (none && loading) {
+    // placeholder tiles while the SVGs download (no folder/drop screen)
+    $('drop').hidden = true; $('empty').hidden = true; $('chips').hidden = true;
+    document.querySelector('.search').hidden = false;
+    $('count').textContent = '';
+    grid.innerHTML = '<div class="sk" aria-hidden="true"><span class="glyph"></span><span class="label"></span></div>'.repeat(60);
+    return;
+  }
   $('drop').hidden = !none;
   $('empty').hidden = none || list.length > 0;
   $('chips').hidden = none || $('chips').children.length === 0;
@@ -192,10 +202,11 @@ function jsx(svg) {
     (_, a) => ' ' + (a === 'class' ? 'className' : a.replace(/-(\w)/g, (_, c) => c.toUpperCase())) + '=')
     .replace(/<svg /, '<svg {...props} ');
 }
+const clearSelected = () => grid.querySelectorAll('.cell[aria-selected="true"]').forEach(c => c.setAttribute('aria-selected', 'false'));
 function openPanel(i) {
   const ic = list[i]; if (!ic) return;
   selected = i;
-  grid.querySelectorAll('.cell[aria-selected="true"]').forEach(c => c.setAttribute('aria-selected', 'false'));
+  clearSelected();
   const cell = grid.children[i]; cell.setAttribute('aria-selected', 'true');
   cell.scrollIntoView({ block: 'nearest' });
   $('pName').textContent = ic.name;
@@ -208,7 +219,7 @@ function openPanel(i) {
 }
 function closePanel() {
   panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true');
-  grid.querySelectorAll('.cell[aria-selected="true"]').forEach(c => c.setAttribute('aria-selected', 'false'));
+  clearSelected();
 }
 function step(d) {
   if (!list.length) return;
@@ -372,17 +383,16 @@ addEventListener('drop', async e => {
 });
 
 /* ---------- boot ---------- */
-function showDrop(title, text, button) {
-  $('dropTitle').textContent = title; $('dropText').textContent = text; $('choose').hidden = !button;
-}
 async function boot() {
-  showDrop('Loading icons…', '', false); render();
+  render();
   const items =
     await tryLoad(`GitHub (${GITHUB.owner}/${GITHUB.repo}@${GITHUB.branch}/${GITHUB.path})`, githubRefs) ||
     await tryLoad(`local folder (${LOCAL_DIR})`, () => localRefs());
   if (items) { load(items); return; }
-  showDrop('Couldn’t load the icons',
-    'GitHub and the local folder were both unavailable. Choose a folder of SVGs, or drop one here. It’s only read in your browser.', true);
+  loading = false;
+  $('dropTitle').textContent = 'Couldn’t load the icons';
+  $('dropText').textContent = 'GitHub and the local folder were both unavailable. Choose a folder of SVGs, or drop one here. It’s only read in your browser.';
+  $('choose').hidden = false;
   render();
 }
 boot();
