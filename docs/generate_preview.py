@@ -19,11 +19,11 @@ from pathlib import Path
 SVG_DIR = Path(sys.argv[1] if len(sys.argv) > 1 else "svg")
 OUT_DIR = Path(sys.argv[2] if len(sys.argv) > 2 else "docs")
 
-N = None             # show only the first N icons (sorted by name); None = show all
-COLS = 10            # icons per row
+COLS = 8             # icons per row
 ICON = 64            # icon size in px
 GAP_X = 24           # horizontal gap between icons
 GAP_Y = 24           # vertical gap between rows
+N = COLS * 6         # show only the first N icons (sorted by name); None = show all
 
 THEMES = {
     "light": "#15171c",   # icon color on light READMEs
@@ -179,4 +179,4 @@ for theme, color in THEMES.items():
     if kb > 1500:
         print(f"[docs] warning: {out} is large; GitHub may be slow to render it.", file=sys.stderr)
 if skipped:
-    print(f"[docs] {skipped} file(s) skipped")
+    print(f"[docs] {skipped} file(s) skipped")  
