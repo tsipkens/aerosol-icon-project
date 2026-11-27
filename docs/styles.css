@@ -5,7 +5,7 @@
   --muted: #6b7080;
   --line: #e7e8ed;
   --hover: #f0f1f5;
-  --accent: #2b59ff;
+  --accent: #0070DA;
   --accent-ink: #ffffff;
   --dots: #d9dbe3;
   --size: 72px;
@@ -575,27 +575,6 @@ body.dragging .grid {
 .stage svg {
   width: 164px;
   height: 164px;
-}
-
-.sizes {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 28px;
-  padding: 18px 22px 4px;
-  color: var(--ink);
-}
-
-.sizes figure {
-  margin: 0;
-  display: grid;
-  justify-items: center;
-  gap: 6px;
-}
-
-.sizes figcaption {
-  font: 400 11px var(--mono);
-  color: var(--muted);
 }
 
 .actions {

@@ -59,7 +59,6 @@
   </header>
   <div class="cat" id="pCat"></div>
   <div class="stage" id="pStage"></div>
-  <div class="sizes" id="pSizes"></div>
   <div class="actions">
     <button class="btn primary wide" id="copySvg">Copy SVG</button>
     <button class="btn" id="copyJsx">Copy JSX</button>
@@ -215,8 +214,6 @@ function openPanel(i) {
   $('pName').textContent = ic.name;
   $('pCat').textContent = ic.cat ? prettyCat(ic.cat) : '';
   $('pStage').innerHTML = ic.svg;
-  $('pSizes').innerHTML = [24, 32, 48, 72].map(s =>
-    `<figure><span style="display:block;width:${s}px;height:${s}px">${ic.svg.replace('<svg ', `<svg width="${s}" height="${s}" `)}</span><figcaption>${s}</figcaption></figure>`).join('');
   $('pCode').textContent = ic.svg;
   panel.classList.add('open'); panel.setAttribute('aria-hidden', 'false');
 }
