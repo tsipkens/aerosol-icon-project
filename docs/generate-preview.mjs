@@ -10,6 +10,7 @@
  * No dependencies; needs Node 18+. The layout mirrors the website: a rounded
  * outlined tile per icon with its name underneath, sorted by name.
  */
+
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, statSync } from 'node:fs';
 import { join, relative, basename, sep } from 'node:path';
 
