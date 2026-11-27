@@ -10,6 +10,7 @@ A public icon pack for a range of common aerosol-related devices, provided as SV
 <picture> <source media="(prefers-color-scheme: dark)" srcset="docs/icons-dark.svg"> <img alt="Preview of all icons" src="docs/icons-light.svg"> </picture>
 
 
+
 ## Missing icons
 
 Desired icons that may be missing from this icon set can be indicated by raising an issue against this repository. 

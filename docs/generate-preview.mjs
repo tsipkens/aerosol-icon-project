@@ -4,8 +4,8 @@
  *
  *   node scripts/generate-preview.mjs [svgDir] [outDir]
  *
- * Defaults: svgDir = "svg", outDir = "preview"
- * Writes:   preview/icons-light.svg  and  preview/icons-dark.svg
+ * Defaults: svgDir = "svg", outDir = "docs"
+ * Writes:   docs/icons-light.svg  and  docs/icons-dark.svg
  *
  * No dependencies; needs Node 18+. The layout mirrors the website: a rounded
  * outlined tile per icon with its name underneath, sorted by name.
@@ -45,7 +45,7 @@ function walk(dir, out = []) {
 }
 
 try { statSync(SVG_DIR); } catch {
-  console.error(`[preview] folder not found: ${SVG_DIR}`);
+  console.error(`[docs] folder not found: ${SVG_DIR}`);
   process.exit(1);
 }
 
@@ -73,7 +73,7 @@ function normalize(text, uid) {
     viewBox = `0 0 ${w} ${h}`;
   }
 
-  // drop things that don't belong in a preview
+  // drop things that don't belong in a docs
   inner = inner
     .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/<(script|metadata|title|desc|style|foreignObject)\b[\s\S]*?<\/\1\s*>/gi, '')
@@ -118,12 +118,12 @@ files.forEach((file, i) => {
   const name = basename(file).replace(/\.svg$/i, '');
   const svg = normalize(readFileSync(file, 'utf8'), `i${i}`);
   if (svg) icons.push({ name, svg, file: relative(SVG_DIR, file).split(sep).join('/') });
-  else { skipped++; console.warn(`[preview] skipped (not a valid svg): ${file}`); }
+  else { skipped++; console.warn(`[docs] skipped (not a valid svg): ${file}`); }
 });
 icons.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
 
 if (!icons.length) {
-  console.error(`[preview] no SVGs found in ${SVG_DIR}`);
+  console.error(`[docs] no SVGs found in ${SVG_DIR}`);
   process.exit(1);
 }
 
@@ -161,7 +161,7 @@ for (const theme of Object.keys(THEMES)) {
   const text = render(theme);
   writeFileSync(out, text);
   const kb = Math.round(Buffer.byteLength(text) / 1024);
-  console.log(`[preview] ${out}  ${icons.length} icons, ${kb} KB`);
-  if (kb > 1500) console.warn(`[preview] warning: ${out} is large; GitHub may be slow to render it.`);
+  console.log(`[docs] ${out}  ${icons.length} icons, ${kb} KB`);
+  if (kb > 1500) console.warn(`[docs] warning: ${out} is large; GitHub may be slow to render it.`);
 }
-if (skipped) console.log(`[preview] ${skipped} file(s) skipped`);
+if (skipped) console.log(`[docs] ${skipped} file(s) skipped`);
