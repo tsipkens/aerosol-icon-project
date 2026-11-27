@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Icons</title>
+<title>aerosol-icon-project</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
@@ -19,8 +19,11 @@
         <label class="size">Size
           <input type="range" id="size" min="48" max="128" value="128" aria-label="Icon size">
         </label>
-        <button class="btn icon" id="theme" title="Toggle theme" aria-label="Toggle theme">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+        <button class="switch" id="theme" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle theme">
+          <span class="knob">
+            <svg class="sun" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2.5 12h2M19.5 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" fill="none"/></svg>
+            <svg class="moon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+          </span>
         </button>
       </div>
     </div>
@@ -265,11 +268,17 @@ const root = document.documentElement;
 const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} } };
 function setSize(v) { root.style.setProperty('--size', v + 'px'); $('size').value = v; store.set('ig-size', v); }
 $('size').oninput = e => setSize(e.target.value);
+const darkQuery = matchMedia('(prefers-color-scheme: dark)');
+const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : darkQuery.matches;
+const syncTheme = () => $('theme').setAttribute('aria-checked', String(isDark()));
 $('theme').onclick = () => {
-  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-  root.dataset.theme = dark ? 'light' : 'dark'; store.set('ig-theme', root.dataset.theme);
+  root.dataset.theme = isDark() ? 'light' : 'dark'; store.set('ig-theme', root.dataset.theme); syncTheme();
 };
 if (store.get('ig-theme')) root.dataset.theme = store.get('ig-theme');
+syncTheme();
+darkQuery.addEventListener('change', syncTheme);
+// enable the slide animation only after the initial state is set, so it doesn't animate on load
+requestAnimationFrame(() => requestAnimationFrame(() => $('theme').classList.add('ready')));
 if (store.get('ig-size')) setSize(store.get('ig-size'));
 
 /* ---------- icon sources ----------
