@@ -6,6 +6,7 @@ on:
     # only re-run when icons or the generator change (this also prevents loops)
     paths:
       - 'svg/**'
+      - 'README.md'
       - 'docs/generate-preview.mjs'
   workflow_dispatch:
 
