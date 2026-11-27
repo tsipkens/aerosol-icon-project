@@ -6,6 +6,7 @@
 
 A public icon pack for a range of common aerosol-related devices, provided as SVGs (a subset) or in PPTX (full icon set). Sample icons are shown below.
 
+
 <picture> <source media="(prefers-color-scheme: dark)" srcset="docs/icons-dark.svg"> <img alt="Preview of all icons" src="docs/icons-light.svg"> </picture>
 
 
