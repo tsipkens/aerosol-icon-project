@@ -2,12 +2,11 @@ name: Update icon preview
 
 on:
   push:
-    branches: [developer]
+    branches: [main developer]
     # only re-run when icons or the generator change (this also prevents loops)
     paths:
       - 'svg/**'
-      - 'README.md'
-      - 'docs/generate-preview.mjs'
+      - 'docs/generate_preview.py'
   workflow_dispatch:
 
 permissions:
@@ -19,12 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: 20
+          python-version: '3.x'
 
       - name: Generate preview
-        run: node docs/generate-preview.mjs svg docs
+        run: python docs/generate_preview.py svg docs
 
       - name: Commit changes
         run: |
