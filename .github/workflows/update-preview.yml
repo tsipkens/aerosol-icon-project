@@ -24,7 +24,7 @@ jobs:
           node-version: 20
 
       - name: Generate preview
-        run: node docs/generate-preview.mjs svg preview
+        run: node docs/generate-preview.mjs svg docs
 
       - name: Commit changes
         run: |
