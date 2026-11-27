@@ -799,7 +799,7 @@ if __name__ == "__main__":
         folder_to_clean,
         folder_to_output,
         target_stroke=1.25,
-        padding=10,
+        padding=1,
     )
 
     # Or force a common content area:
