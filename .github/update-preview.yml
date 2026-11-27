@@ -1,0 +1,38 @@
+name: Update icon preview
+
+on:
+  push:
+    branches: [developer]
+    # only re-run when icons or the generator change (this also prevents loops)
+    paths:
+      - 'svg/**'
+      - 'docs/generate-preview.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate preview
+        run: node docs/generate-preview.mjs svg preview
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add preview/
+          if git diff --cached --quiet; then
+            echo "Preview is up to date."
+          else
+            git commit -m "chore: update icon preview [skip ci]"
+            git push
+          fi
